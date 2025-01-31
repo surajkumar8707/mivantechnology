@@ -18,11 +18,11 @@ class SettingSeeder extends Seeder
 
         // Seed new data
         Setting::create([
-            'app_name' => 'Ready Homez',
-            'email' => 'info.readyhomez@gmail.com',
-            'whatsapp' => '9650425860',
-            'contact' => '9873882054',
-            'address' => 'Gaur City centre office no FF-201-H',
+            'app_name' => 'Mivantechnology',
+            'email' => 'mivantechnology@gmail.com',
+            'whatsapp' => '8707633860',
+            'contact' => '8707633860',
+            'address' => 'Address',
             'header_image' => "assets/front/images/rh_logo.png",
             'is_fresh' => 1,
         ]);
