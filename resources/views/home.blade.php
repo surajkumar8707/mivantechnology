@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', getSettings()->app_name . ':: Home Page')
+@section('title', 'Home Page')
 @section('content')
     <div class="banner-carousel banner-carousel-2 mb-0">
         <div class="banner-carousel-item"
@@ -141,7 +141,7 @@
                 <div class="col-lg-5 about-section">
                     <h3 class="column-title">A COMPANY YOU CAN<br> TRUST TO BE WITH YOU<br> AT EVERY STEP</h3>
 
-                    <p>The SRA Construction company is a top general contractor. However, what makes us different
+                    <p>The {{ $settings->app_name }} company is a top general contractor. However, what makes us different
                         from our competitors is our commitment to safety, operational excellence, and an exceptional
                         client experience. We work collaboratively with you to reach your objectives. By hiring the
                         industry's best, we build the highest-performing teams; we are adept at working with design
@@ -199,7 +199,7 @@
                         <div class="item">
                             <div class="quote-item">
                                 <span class="quote-text">
-                                    “It is certified that the works under M/S SRA Construction which include Steel
+                                    “It is certified that the works under M/S {{ $settings->app_name }} which include Steel
                                     structure work of bridge in the premises, civil and allied works of fire-lifts,
                                     infra-works at ground floor, civil and allied works of Bungalow-58 from plinth
                                     to LMR including RCC, plaster and waterproofing have been satisfactorily
@@ -209,7 +209,7 @@
                                     information.
                                     During the execution period from 2014 to 2022 (till date, 15th January,2022),
                                     the approach and behaviors of the staffs and owners have been excellent.
-                                    Our best wishes to SRA Construction for future endeavors.”
+                                    Our best wishes to {{ $settings->app_name }} for future endeavors.”
                                 </span>
 
                                 <div class="quote-item-footer">
@@ -225,11 +225,11 @@
                         <div class="item">
                             <div class="quote-item">
                                 <span class="quote-text">
-                                    “This letter serves as our endorsement for M/s SRA Constructions. Since the
+                                    “This letter serves as our endorsement for M/s {{ $settings->app_name }}s. Since the
                                     commencement of awarded works in August 2021, the progress, quality control and
                                     overall project management have been impressive and it has achieved milestones
                                     as planned. The cordination amongst staffs, higher management and with ourselves
-                                    may be rated very good. M/S SRA Constructions has so far managed all the
+                                    may be rated very good. M/S {{ $settings->app_name }}s has so far managed all the
                                     construction activities, site management and other issues prudently.
                                     We wish all the best for it's future endeavors.”
                                 </span>

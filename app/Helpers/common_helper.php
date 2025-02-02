@@ -99,3 +99,6 @@ if (!function_exists('returnWebJsonResponse')) {
         ));
     }
 }
+
+// $settings = getSettings();
+// $social = getSocialMediaLink();

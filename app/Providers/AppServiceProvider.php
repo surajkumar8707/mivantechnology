@@ -5,6 +5,8 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Pagination\Paginator;
 use Yajra\DataTables\Html\Builder;
+use Illuminate\Support\Facades\View;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,5 +25,10 @@ class AppServiceProvider extends ServiceProvider
     {
         Paginator::useBootstrap();
         Builder::useVite();
+
+        $settings = getSettings(); // Fetch the settings
+
+        // Share $settings globally with all views
+        View::share('settings', $settings);
     }
 }

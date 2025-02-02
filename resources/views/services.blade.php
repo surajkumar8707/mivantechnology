@@ -12,7 +12,7 @@
                             can Trust</h2>
                     </div>
                     <div class="col-lg-7" data-aos="fade-left">
-                        <p>The SRA Construction company is a top general contractor. However, what makes us different from
+                        <p>The {{ $settings->app_name }} company is a top general contractor. However, what makes us different from
                             our competitors is our commitment to safety, operational excellence, and an exceptional client
                             experience. We work collaboratively with you to reach your objectives. By hiring the industry's
                             best, we build the highest-performing teams; we are adept at working with design teams; we are
@@ -57,7 +57,7 @@
                     <div class="col-lg-4 single-service-info" data-aos="fade-right">
                         <h1>Industrial</h1>
                         <p>
-                            SRA Construction prioritizes cost-effective, efficient, and aesthetically pleasing industrial
+                            {{ $settings->app_name }} prioritizes cost-effective, efficient, and aesthetically pleasing industrial
                             building projects. We develop solutions tailored to our clientele. Our approach to every project
                             is to view it through the lens of the client's vision and objectives, managing every aspect of
                             the

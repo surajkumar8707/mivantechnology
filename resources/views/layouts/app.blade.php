@@ -1,7 +1,3 @@
-@php
-    $settings = getSettings();
-    $social = getSocialMediaLink();
-@endphp
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,12 +6,12 @@
     <!-- Basic Page Needs
 ================================================== -->
     <meta charset="utf-8">
-    <title>SRA Construction</title>
+    <title>@yield('title') :: {{ $settings->app_name }}</title>
 
     <!-- Mobile Specific Metas
 ================================================== -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="SRA Construction">
+    <meta name="description" content="{{ $settings->app_name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 
     <!-- Favicon
@@ -168,19 +164,19 @@
                                 <span>Copyright &copy;
                                     <script>
                                         document.write(new Date().getFullYear())
-                                    </script> SRA Construction. All Rights Reserved.
+                                    </script> {{ $settings->app_name }}. All Rights Reserved.
                                 </span>
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        {{-- <div class="col-md-6">
                             <div class="footer-inno text-md-right">
                                 <img src="https://sraconstruction.in/images/icon.png" width="15"
                                     alt="innovative web solution">
                                 Design & Developed by <a href="http://innovativewebs.net/" target="_blank">Innovative
                                     Web Solutions</a>
                             </div>
-                        </div>
+                        </div> --}}
                     </div><!-- Row end -->
 
                     <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
