@@ -16,7 +16,7 @@ class FrontController extends Controller
         // dd($rooms);
         // dd($sliders->toArray());
         // return view('home', compact('sliders', 'rooms'));
-        return view('layouts.app', compact('sliders', 'rooms'));
+        return view('home', compact('sliders', 'rooms'));
     }
 
     public function roomDetailPage($id)
@@ -89,6 +89,11 @@ class FrontController extends Controller
     public function termsCondition()
     {
         return view('terms_condition');
+    }
+
+    public function services()
+    {
+        return view('services');
     }
 
     public function contactUs()

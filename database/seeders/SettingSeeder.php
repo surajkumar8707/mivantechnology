@@ -23,7 +23,7 @@ class SettingSeeder extends Seeder
             'whatsapp' => '8707633860',
             'contact' => '8707633860',
             'address' => 'Address',
-            'header_image' => "assets/front/images/rh_logo.png",
+            'header_image' => "assets/front/images/header.jpg",
             'is_fresh' => 1,
         ]);
     }
