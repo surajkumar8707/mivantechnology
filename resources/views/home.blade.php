@@ -90,7 +90,7 @@
 
                     <div class="service-box service-1">
                         <div class="service-overlay text-center">
-                            <a href="services.html">
+                            <a href="{{ route('front.services') }}">
                                 <h2>Commercial/Residential
                                     <img src="https://sraconstruction.in/images/arrow.png" width="25" alt="">
                                 </h2>
@@ -102,7 +102,7 @@
 
                     <div class="service-box service-2">
                         <div class="service-overlay text-center">
-                            <a href="services.html">
+                            <a href="{{ route('front.services') }}">
                                 <h2>Industrial
                                     <img src="https://sraconstruction.in/images/arrow.png" width="25" alt="">
                                 </h2>
@@ -114,7 +114,7 @@
 
                     <div class="service-box service-3">
                         <div class="service-overlay text-center">
-                            <a href="services.html">
+                            <a href="{{ route('front.services') }}">
                                 <h2>Infrastructure
                                     <img src="https://sraconstruction.in/images/arrow.png" width="25" alt="">
                                 </h2>
@@ -126,7 +126,7 @@
 
                     <div class="service-box service-4">
                         <div class="service-overlay text-center">
-                            <a href="services.html">
+                            <a href="{{ route('front.services') }}">
                                 <h2>River Front Development
                                     <img src="https://sraconstruction.in/images/arrow.png" width="25" alt="">
                                 </h2>
@@ -150,7 +150,7 @@
                         Industrial, Infrastructure & River front development projects.
                     </p>
                     <div class="plan-action">
-                        <a href="services.html" class="btn btn-primary float-right">EXPLORE MORE...</a>
+                        <a href="{{ route('front.services') }}" class="btn btn-primary float-right">EXPLORE MORE...</a>
                     </div>
                 </div><!-- Col end -->
 
@@ -179,7 +179,7 @@
                         whom have worked together for more than Twenty five years.
                     </p>
                     <div class="plan-action">
-                        <a href="about.html" class="btn btn-primary float-left">EXPLORE MORE...</a>
+                        <a href="{{ route('front.about') }}" class="btn btn-primary float-left">EXPLORE MORE...</a>
                     </div>
                 </div><!-- Col end -->
 
@@ -260,7 +260,7 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="general-btn text-center">
-                        <a class="btn btn-primary" href="gallery.html">VIEW ALL...</a>
+                        <a class="btn btn-primary" href="{{ route('front.gallery') }}">VIEW ALL...</a>
                     </div>
                 </div>
             </div>
@@ -367,7 +367,7 @@
 
                         </p>
                         <div class="general-btn text-center">
-                            <a class="btn btn-primary" href="contact.html">CONNECT WITH US</a>
+                            <a class="btn btn-primary" href="{{ route('front.contact') }}">CONNECT WITH US</a>
                         </div>
                     </div><!-- Col end -->
                 </div><!-- Content row end -->

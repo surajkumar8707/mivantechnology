@@ -52,7 +52,7 @@
                                 </span> -->
                         <div class="ts-service-box-content">
                             <h4>Email Us</h4>
-                            <p>info@sraconstruction.in</p>
+                            <p>{{ $settings->email }}</p>
                         </div>
                     </div>
 

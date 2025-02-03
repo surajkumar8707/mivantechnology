@@ -27,8 +27,11 @@ class AppServiceProvider extends ServiceProvider
         Builder::useVite();
 
         $settings = getSettings(); // Fetch the settings
+        $social = getSocialMediaLink();
 
         // Share $settings globally with all views
         View::share('settings', $settings);
+        View::share('social', $social);
+
     }
 }

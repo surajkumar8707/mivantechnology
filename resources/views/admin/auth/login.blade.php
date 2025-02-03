@@ -91,7 +91,7 @@
                     <div class="card-body">
                         <!-- Logo -->
                         <div class="app-brand justify-content-center">
-                            <a href="index.html" class="app-brand-link gap-2">
+                            <a href="{{ route('front.home') }}" class="app-brand-link gap-2">
                                 <span class="app-brand-logo demo">
 
                                     <svg width="25" viewBox="0 0 25 42" version="1.1"
@@ -171,7 +171,7 @@
                             <div class="mb-3 form-password-toggle">
                                 <div class="d-flex justify-content-between">
                                     <label class="form-label" for="password">Password</label>
-                                    <a href="auth-forgot-password-basic.html">
+                                    <a href="#">
                                         <small>Forgot Password?</small>
                                     </a>
                                 </div>
@@ -197,7 +197,7 @@
 
                         <p class="text-center">
                             <span>New on our platform?</span>
-                            <a href="auth-register-basic.html">
+                            <a href="#">
                                 <span>Create an account</span>
                             </a>
                         </p>

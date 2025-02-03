@@ -97,14 +97,31 @@
                         </div>
                         <div class="col-md-3 footer-social">
                             <ul>
-                                <li><a href="https://www.facebook.com/SRA-Construction-105801312015451"
-                                        target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li><a href="https://www.linkedin.com/in/sra-construction-953327230" target="_blank"
-                                        aria-label="Linkedin"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="https://www.youtube.com/channel/UCINHIglHja3XMTrk456i7FQ" target="_blank"
-                                        aria-label="Youtube"><i class="fab fa-youtube"></i></a>
-                                </li>
+                                {{-- @dd($social) --}}
+                                @if ($social->facebook_show)
+                                    <li><a href="{{ $social->facebook }}" target="_blank" aria-label="Facebook"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                @endif
+
+                                @if ($social->instagram_show)
+                                    <li><a href="{{ $social->instagram }}" target="_blank" aria-label="Instagram"><i
+                                        class="fa-instagram fab"></i></a></li>
+                                @endif
+
+                                @if ($social->linkedin_show)
+                                    <li>
+                                        <a href="{{ $social->linkedin }}" target="_blank" aria-label="Linkedin">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                @endif
+
+                                @if ($social->youTube_show)
+                                    <li><a href="{{ $social->youTube }}"
+                                            target="_blank" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                @endif
                             </ul>
                         </div>
                     </div>
@@ -129,25 +146,19 @@
                         <div class=" col-md-3 footer-widget mt-5 mt-md-0">
                             <h3 class="widget-title">Address</h3>
                             <div class="working-hours">
-                                F-83, Haware Fantasia Business Park,
-                                Plot No 47, Sector 30A, Nano Wing,
-                                Vashi, Navi Mumbai - 400 703,
-                                Maharashtra
-
+                                {{ $settings->address }}
                             </div>
                         </div><!-- Col end -->
-                        <div class="col-md-2 footer-widget mt-5 mt-md-0">
+                        <div class="col-md-5 footer-widget mt-5 mt-md-0">
                             <h3 class="widget-title">Email</h3>
                             <div class="working-hours">
-                                info@sraconstruction.in
+                                {{ $settings->email }}
                             </div>
                         </div><!-- Col end -->
-                        <div class="col-lg-3 col-md-6 footer-widget mt-5 mt-md-0">
+                        <div class="col-lg-3 col-md-4 footer-widget mt-5 mt-md-0">
                             <h3 class="widget-title">Call Us</h3>
                             <div class="working-hours">
-                                022-40022950<br>
-                                +91-9137709099<br>
-                                +91-7977467819
+                                +91-{{ $settings->contact }}<br>
                             </div>
                         </div><!-- Col end -->
 

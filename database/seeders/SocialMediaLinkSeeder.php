@@ -22,7 +22,7 @@ class SocialMediaLinkSeeder extends Seeder
             'youTube_show' => true,
 
             'instagram' => 'https://www.instagram.com/',
-            'instagram_show' => true,
+            'instagram_show' => false,
 
             'facebook' => 'https://www.facebook.com/',
             'facebook_show' => true,

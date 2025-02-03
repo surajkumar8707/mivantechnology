@@ -7,7 +7,7 @@
 
                         <div class="logo">
                             {{-- @dd($settings->toArray(), $social->toArray()) --}}
-                            <a class="d-block" href="index.html">
+                        <a class="d-block" href="{{ route('front.home') }}">
                                 @if (isset($settings->header_image) and !empty($settings->header_image))
                                     <img loading="{{ $settings->app_name }}" src="{{ public_asset($settings->header_image) }}" alt="{{ $settings->app_name }}">
                                 @else
@@ -40,7 +40,7 @@
                                 </li>
 
                                 <li class="header-get-a-quote">
-                                    <a class="btn btn-primary" href="contact.html">Get A Quotation</a>
+                                    <a class="btn btn-primary" href="{{ route('front.contact') }}">Get A Quotation</a>
                                 </li>
                             </ul>
                         </div>
