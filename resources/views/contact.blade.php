@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Contact Page')
 @section('content')
     <style>
         .contact-form-section {
@@ -38,11 +39,7 @@
                                 </span> -->
                         <div class="ts-service-box-content">
                             <h4>Address</h4>
-                            <p>F-83, Haware Fantasia Business Park, <br>
-                                Plot No 47, Sector 30A, Nano Wing, <br>
-                                Vashi, Navi Mumbai - 400 703,
-                                Maharashtra
-                            </p>
+                            <p>{{ $settings->address }}</p>
                         </div>
                     </div>
 
@@ -62,10 +59,10 @@
                                 </span> -->
                         <div class="ts-service-box-content">
                             <h4>Call Us</h4>
-                            <p>022-40022950 | +91-9137709099 | +91-7977467819</p>
+                            <p>{{ $settings->contact }}</p>
                         </div>
                     </div>
-                    <div>
+                    {{-- <div>
                         <table>
                             <tr>
                                 <td>PAN Number</td>
@@ -103,7 +100,7 @@
                                 <td>4000516940001000</td>
                             </tr>
                         </table>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="col-md-6 contact-form-section">
                     <h3 class="column-title">Fill out our form below, an SRA Constrcution Representative

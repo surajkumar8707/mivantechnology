@@ -32,7 +32,7 @@
                 <div class="row">
                     <div class="col-md-12 text-center text-md-center">
                         <div class="call-to-action-text">
-                            <h3 class="action-title">For Services Related Queries! Call Us Now: +91-7977467819</h3>
+                            <h3 class="action-title">For Services Related Queries! Call Us Now: +91-{{ $settings->contact }}</h3>
                         </div>
                     </div><!-- Col end -->
 
