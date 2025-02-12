@@ -8,7 +8,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="banner-heading">
-                            <h1 class="banner-title">Privacy Policy</h1>
+                            <h1 class="banner-title">About Page</h1>
                         </div>
                     </div>
                 </div>
