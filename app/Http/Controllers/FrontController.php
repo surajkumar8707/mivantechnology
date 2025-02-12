@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Booking;
 use App\Models\Contact;
+use App\Models\Gallery;
 use App\Models\Room;
 use Illuminate\Http\Request;
 
@@ -12,11 +13,11 @@ class FrontController extends Controller
     public function home()
     {
         $sliders = getAllSlider(1);
-        $rooms = Room::where('status', 1)->get();
-        // dd($rooms);
+        $galleries = Gallery::where('status', 1)->take(3)->get();
+        // dd($galleries->toArray());
         // dd($sliders->toArray());
-        // return view('home', compact('sliders', 'rooms'));
-        return view('home', compact('sliders', 'rooms'));
+        // return view('home', compact('sliders', 'galleries'));
+        return view('home', compact('sliders', 'galleries'));
     }
 
     public function roomDetailPage($id)
@@ -62,7 +63,8 @@ class FrontController extends Controller
     }
     public function gallery()
     {
-        return view('gallery');
+        $galleries = Gallery::where('status', 1)->get();
+        return view('gallery', compact('galleries'));
     }
     public function construction()
     {

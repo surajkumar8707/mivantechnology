@@ -3,7 +3,7 @@
 @section('content')
     <div class="banner-carousel banner-carousel-2 mb-0">
         <div class="banner-carousel-item"
-            style="background-image:url({{ public_asset('assets/front/images/IMG-20250201-WA0016.jpg') }})">
+            style="background-image:url({{ public_asset('assets/front/images/Infrastructure.jpg') }})">
             <div class="container">
                 <div class="box-slider-content">
                     <div class="box-slider-text">
@@ -18,7 +18,7 @@
         </div>
 
         <div class="banner-carousel-item"
-            style="background-image:url({{ public_asset('assets/front/images/IMG-20250201-WA0019.jpg') }})">
+            style="background-image:url({{ public_asset('assets/front/images/Commercial-Residential.jpg') }})">
             <div class="slider-content text-left">
                 <div class="container">
                 </div>
@@ -32,7 +32,8 @@
                 <div class="row">
                     <div class="col-md-12 text-center text-md-center">
                         <div class="call-to-action-text">
-                            <h3 class="action-title">For Services Related Queries! Call Us Now: +91-{{ $settings->contact }}</h3>
+                            <h3 class="action-title">For Services Related Queries! Call Us Now: +91-{{ $settings->contact }}
+                            </h3>
                         </div>
                     </div><!-- Col end -->
 
@@ -164,7 +165,7 @@
             <div class="row about-section-bg">
                 <div class="col-lg-7 mt-lg-0 about-section-img">
 
-                    <img src="https://sraconstruction.in/images/aboutimage.png" alt="">
+                    <img src="{{ public_asset('assets/front/images/aboutimage.jpg') }}" alt="">
 
                 </div><!-- Col end -->
 
@@ -251,105 +252,63 @@
 
 
 
-    <section id="project-area" class="project-area solid-bg">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-7">
+    @if (count($galleries) > 0)
+        <section id="project-area" class="project-area solid-bg">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-7">
 
-                    <h3 class="section-sub-title">PROJECTS GALLERY</h3>
-                </div>
-                <div class="col-lg-5">
-                    <div class="general-btn text-center">
-                        <a class="btn btn-primary" href="{{ route('front.gallery') }}">VIEW ALL...</a>
+                        <h3 class="section-sub-title">PROJECTS GALLERY</h3>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="general-btn text-center">
+                            <a class="btn btn-primary" href="{{ route('front.gallery') }}">VIEW ALL...</a>
+                        </div>
                     </div>
                 </div>
+                <!--/ Title row end -->
+
+                <div class="row">
+                    <div class="col-12">
+                        <!-- project filter end -->
+                        <div class="row shuffle-wrapper">
+                            <div class="col-1 shuffle-sizer"></div>
+
+                            @foreach ($galleries as $gallery)
+                                <div class="col-lg-4 col-sm-6 shuffle-item"
+                                    data-groups="[&quot;government&quot;,&quot;healthcare&quot;]">
+                                    <div class="project-img-container">
+                                        <a class="gallery-popup" href="{{ public_asset($gallery->image) }}"
+                                            aria-label="project-img">
+                                            <img class="img-fluid"
+                                                src="{{ public_asset($gallery->image) }}"
+                                                alt="project-img">
+
+                                        </a>
+                                        <div class="project-item-info">
+                                            <div class="project-item-info-content">
+                                                <h3 class="project-item-title">
+                                                    <a class="gallery-popup"
+                                                        href="{{ public_asset($gallery->image) }}"
+                                                        aria-label="project-img">{{ $gallery->title }}</a>
+                                                </h3>
+                                                <!-- <p class="project-cat">Commercial, Interiors</p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+
+                        </div><!-- shuffle end -->
+                    </div>
+
+
+
+                </div><!-- Content row end -->
             </div>
-            <!--/ Title row end -->
-
-            <div class="row">
-                <div class="col-12">
-                    <!-- project filter end -->
-                    <div class="row shuffle-wrapper">
-                        <div class="col-1 shuffle-sizer"></div>
-
-                        <div class="col-lg-4 col-sm-6 shuffle-item"
-                            data-groups="[&quot;government&quot;,&quot;healthcare&quot;]">
-                            <div class="project-img-container">
-                                <a class="gallery-popup" href="images/gallery/buildingconstruction.jpg"
-                                    aria-label="project-img">
-                                    <img class="img-fluid"
-                                        src="https://sraconstruction.in/images/gallery/buildingconstruction.jpg"
-                                        alt="project-img">
-
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a class="gallery-popup" href="images/gallery/buildingconstruction.jpg"
-                                                aria-label="project-img">BUILDING
-                                                CONSTRUCTION</a>
-                                        </h3>
-                                        <!-- <p class="project-cat">Commercial, Interiors</p> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- shuffle item 1 end -->
-
-                        <div class="col-lg-4 col-sm-6 shuffle-item" data-groups="[&quot;healthcare&quot;]">
-                            <div class="project-img-container">
-                                <a class="gallery-popup" href="images/gallery/foundationconstruction.jpg"
-                                    aria-label="project-img">
-                                    <img class="img-fluid"
-                                        src="https://sraconstruction.in/images/gallery/foundationconstruction.jpg"
-                                        alt="project-img">
-
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a class="gallery-popup" href="images/gallery/foundationconstruction.jpg"
-                                                aria-label="project-img">FOUNDATION
-                                                CONSTRUCTION</a>
-                                        </h3>
-                                        <!-- <p class="project-cat">Healthcare</p> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- shuffle item 2 end -->
-
-                        <div class="col-lg-4 col-sm-6 shuffle-item"
-                            data-groups="[&quot;infrastructure&quot;,&quot;commercial&quot;]">
-                            <div class="project-img-container">
-                                <a class="gallery-popup" href="images/gallery/liftconstruction.jpg"
-                                    aria-label="project-img">
-                                    <img class="img-fluid"
-                                        src="https://sraconstruction.in/images/gallery/liftconstruction.jpg"
-                                        alt="project-img">
-
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a class="gallery-popup" href="images/gallery/liftconstruction.jpg"
-                                                aria-label="project-img">LIFT
-                                                CONSTRUCTION</a>
-                                        </h3>
-                                        <!-- <p class="project-cat">Government</p> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- shuffle item 3 end -->
-
-
-                    </div><!-- shuffle end -->
-                </div>
-
-
-
-            </div><!-- Content row end -->
-        </div>
-        <!--/ Container end -->
-    </section><!-- Project area end -->
+            <!--/ Container end -->
+        </section>
+    @endif
 
 
     <section class="subscribe no-padding">
