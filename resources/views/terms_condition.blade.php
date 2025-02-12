@@ -1,49 +1,50 @@
 @extends('layouts.app')
-@section('title', getSettings()->app_name . ':: Terma and Conditions')
+@section('title', getSettings()->app_name . ':: Terms and Conditions')
 @section('content')
-    <!-- Terms & Conditions -->
-    <div class="container">
-        <section id="terms-and-conditions">
-            <h1>Terms & Conditions</h1>
-            <p>Welcome to Ready Homez! By using our website and services, you agree to the following terms and conditions.
-                Please read them carefully.</p>
 
-            <h2>1. Acceptance of Terms</h2>
-            <p>By accessing or using our website, you agree to be bound by these terms and any other policies we post. If
-                you do not agree, please do not use our services.</p>
-
-            <h2>2. Use of the Website</h2>
-            <p>You agree to use the website for lawful purposes only. You may not use the site in any way that could harm
-                the website, its content, or other users.</p>
-
-            <h2>3. Booking Terms</h2>
-            <ul>
-                <li><strong>Booking Confirmation:</strong> When you make a booking, you agree to provide accurate and
-                    complete information. Bookings are subject to availability, and we reserve the right to cancel any
-                    booking if incorrect information is provided.</li>
-                <li><strong>Payment:</strong> Payment must be made according to the rates listed on our website. We accept
-                    various payment methods as specified during the booking process.</li>
-            </ul>
-
-            <h2>4. Intellectual Property</h2>
-            <p>All content, design, and materials on the website are owned by Ready Homez and are protected by copyright and
-                trademark laws. You may not reproduce, distribute, or create derivative works without our permission.</p>
-
-            <h2>5. Limitation of Liability</h2>
-            <p>Ready Homez will not be held liable for any damages, losses, or claims arising from the use of our website or
-                services. We do not guarantee that the website will be free from errors, interruptions, or viruses.</p>
-
-            <h2>6. Governing Law</h2>
-            <p>These terms and conditions are governed by the laws of Himachal. Any disputes arising from the use of this
-                website shall be resolved by the courts.</p>
-
-            <h2>7. Changes to Terms</h2>
-            <p>We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting,
-                and your continued use of the website signifies acceptance of the new terms.</p>
-
-            <h2>8. Contact Us</h2>
-            <p>For questions about these Terms & Conditions, please contact us at <a
-                    href="mailto:{{ getSettings()->email }}">{{ getSettings()->email }}</a>.</p>
-        </section>
+    <div id="banner-area" class="banner-area1" style="background-image:url(images/design.png);background-color:#3f1d71 ;">
+        <div class="banner-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="banner-heading">
+                            <h1 class="banner-title">Terms and Conditions</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    <section id="terms-condition" class="terms-condition solid-bg single-service-gap">
+        <div class="container">
+            <h3>1. Use of Our Website</h3>
+            <p>You must be at least 18 years old to use our services. By accessing our website, you agree to use it for
+                lawful purposes only.</p>
+
+            <h3>2. Intellectual Property</h3>
+            <p>All content, including text, images, logos, and designs, are the property of <strong>{{ $settings->app_name }}</strong>
+                and protected under intellectual property laws.</p>
+
+            <h3>3. Services and Pricing</h3>
+            <p>We reserve the right to modify, update, or discontinue any services at any time without prior notice.</p>
+
+            <h3>4. User Responsibilities</h3>
+            <p>You are responsible for maintaining the security of your account credentials and providing accurate
+                information.</p>
+
+            <h3>5. Limitation of Liability</h3>
+            <p>We are not responsible for any damages resulting from your use of our services.</p>
+
+            <h3>6. Governing Law</h3>
+            <p>These terms are governed by the laws of India. Any disputes shall be resolved in the
+                appropriate courts of High Court.</p>
+
+            <h3>7. Changes to Terms</h3>
+            <p>We reserve the right to update these Terms and Conditions. Please review this page periodically.</p>
+
+            <p>If you have any questions, contact us at <strong>{{ $settings->email }}</strong>.</p>
+    </section>
+
 @endsection

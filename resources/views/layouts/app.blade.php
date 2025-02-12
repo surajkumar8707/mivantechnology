@@ -71,6 +71,8 @@
                                     <li><a href="{{ route('front.services') }}">Services</a></li>
                                     <li><a href="{{ route('front.gallery') }}">Gallery</a></li>
                                     <li><a href="{{ route('front.contact') }}">Contact</a></li>
+                                    <li><a href="{{ route('front.privacy.policy') }}">Privacy Policy</a></li>
+                                    <li><a href="{{ route('front.terms.condition') }}">Terms Condition</a></li>
                                     <!--<li class="footer-get-a-quote">-->
                                     <!--  <a class="btn btn-primary" href="Profile.pdf" target="_blank">DOWNLOAD BROCHURE</a>-->
                                     <!--</li>-->

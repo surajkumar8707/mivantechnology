@@ -1,50 +1,47 @@
 @extends('layouts.app')
-@section('title', getSettings()->app_name . ':: Privacy Policy')
+@section('title', getSettings()->app_name . ':: Terms and Conditions')
 @section('content')
-    <!-- Privacy Policy -->
-    <div class="container">
-        <section id="privacy-policy">
-            <h1>Privacy Policy</h1>
-            <p>Welcome to Ready Homez! We value your privacy and are committed to protecting your personal information. This
-                Privacy Policy outlines how we collect, use, and safeguard your data when you visit our website or use our
-                services.</p>
 
-            <h2>1. Information We Collect</h2>
-            <ul>
-                <li><strong>Personal Information:</strong> We may collect your name, email address, phone number, and other
-                    relevant details when you fill out forms, book a room, or contact us for inquiries.</li>
-                <li><strong>Usage Data:</strong> We may also collect information on how you interact with our website, such
-                    as IP address, browser type, and pages visited.</li>
-            </ul>
-
-            <h2>2. How We Use Your Information</h2>
-            <ul>
-                <li>To provide, operate, and maintain our services.</li>
-                <li>To communicate with you regarding your bookings, inquiries, or requests.</li>
-                <li>To improve our website, services, and user experience.</li>
-                <li>To send promotional emails about new services, special offers, or other information that we think you
-                    may find interesting.</li>
-            </ul>
-
-            <h2>3. Sharing of Information</h2>
-            <p>We do not share, sell, rent, or trade your personal information with third parties without your consent,
-                except as necessary to fulfill a service you have requested or as required by law.</p>
-
-            <h2>4. Security</h2>
-            <p>We are committed to ensuring that your information is secure. We implement suitable physical, electronic, and
-                managerial procedures to safeguard the information we collect online.</p>
-
-            <h2>5. Your Rights</h2>
-            <p>You may request details of the personal information we hold about you under data protection laws. You also
-                have the right to request that we correct or delete any information you find inaccurate or incomplete.</p>
-
-            <h2>6. Changes to This Policy</h2>
-            <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page, and we encourage
-                you to review it periodically.</p>
-
-            <h2>7. Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us at <a
-                    href="mailto:your-email@example.com">your-email@example.com</a>.</p>
-        </section>
+    <div id="banner-area" class="banner-area1" style="background-image:url(images/design.png);background-color:#3f1d71 ;">
+        <div class="banner-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="banner-heading">
+                            <h1 class="banner-title">Privacy Policy</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    <section id="terms-condition" class="terms-condition solid-bg single-service-gap">
+        <div class="container">
+            <h3>1. Information We Collect</h3>
+    <p>We may collect personal information (name, email, phone number) and browsing data (IP address, cookies, device information).</p>
+
+    <h3>2. How We Use Your Information</h3>
+    <p>We use your information to provide and improve our services, respond to inquiries, and comply with legal requirements.</p>
+
+    <h3>3. Data Security</h3>
+    <p>We implement security measures to protect your personal data. However, no method of transmission is 100% secure.</p>
+
+    <h3>4. Sharing Your Information</h3>
+    <p>We do not sell or share your personal data except when required by law or with trusted partners assisting in service delivery.</p>
+
+    <h3>5. Cookies and Tracking</h3>
+    <p>We use cookies to enhance your experience. You can disable cookies in your browser settings.</p>
+
+    <h3>6. Your Rights</h3>
+    <p>You can request access, correction, or deletion of your personal data. You may also opt-out of marketing communications.</p>
+
+    <h3>7. Changes to This Policy</h3>
+    <p>We may update this Privacy Policy periodically. Please review it regularly.</p>
+
+    <p>For any concerns, contact us at <strong>{{ $settings->email }}</strong>.</p>
+        </div>
+</section>
+
 @endsection
