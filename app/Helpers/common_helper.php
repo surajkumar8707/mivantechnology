@@ -100,5 +100,21 @@ if (!function_exists('returnWebJsonResponse')) {
     }
 }
 
+if (!function_exists('explodeEmail')) {
+    function explodeEmail($all_email = null)
+    {
+        if(!empty($all_email)){
+            $emails = explode(',', $all_email);
+            if(count($emails) > 0){
+                foreach($emails as $key => $email){
+                    echo "<a href='mailto:".$email."'>".$email."</a> <br>";
+                }
+            }
+            return false;
+        }
+        return false;
+    }
+}
+
 // $settings = getSettings();
 // $social = getSocialMediaLink();

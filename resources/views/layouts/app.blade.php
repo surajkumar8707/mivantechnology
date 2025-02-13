@@ -154,7 +154,7 @@
                         <div class="col-md-5 footer-widget mt-5 mt-md-0">
                             <h3 class="widget-title">Email</h3>
                             <div class="working-hours">
-                                {{ $settings->email }}
+                                {{ explodeEmail($settings->email) }}
                             </div>
                         </div><!-- Col end -->
                         <div class="col-lg-3 col-md-4 footer-widget mt-5 mt-md-0">

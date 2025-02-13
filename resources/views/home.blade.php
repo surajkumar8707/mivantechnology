@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Home Page')
 @section('content')
-    <div class="banner-carousel banner-carousel-2 mb-0">
+    {{-- <div class="banner-carousel banner-carousel-2 mb-0">
         <div class="banner-carousel-item"
             style="background-image:url({{ public_asset('assets/front/images/Infrastructure.jpg') }})">
             <div class="container">
@@ -24,7 +24,92 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
+    <div class="banner-carousel banner-carousel-2 mb-0">
+        <div class="banner-carousel-item" style="background-image:url(https://sraconstruction.in/images/slider-main/Slider5.jpg)">
+          <div class="container">
+              <div class="box-slider-content">
+               <div class="box-slider-text">
+                   <!-- <h2 class="box-slide-title">17 Years Of Excellence In</h2> -->
+                   <h1 class="box-slide-sub-title">A COMPANY YOU CAN<br>
+                    TRUST TO BE WITH<br>
+                    YOU AT EVERY STEP
+                   </h1>
+                   <!-- <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
+                     thinking team looking for talent like.</p> -->
+                   <!-- <p>
+                     <a href="services.html" class="slider btn btn-primary">Our Service</a>
+                   </p> -->
+               </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="banner-carousel-item" style="background-image:url(https://sraconstruction.in/images/slider-main/Slider4.jpg)">
+          <div class="slider-content text-left">
+              <div class="container">
+                <!-- <div class="box-slider-content">
+                    <div class="box-slider-text">
+                      <h2 class="box-slide-title">When Services Matters</h2>
+                      <h3 class="box-slide-sub-title">Your Choice is Simple</h3>
+                      <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
+                          thinking team looking for talent like.</p>
+                      <p><a href="about.html" class="slider btn btn-primary" aria-label="about-us">Know Us</a></p>
+                    </div>
+                </div> -->
+              </div>
+          </div>
+        </div>
+      </div>
+    {{-- <div class="banner-carousel banner-carousel-2 mb-0 slick-initialized slick-slider"><button type="button"
+            class="carousel-control left slick-arrow" aria-label="carousel-control" style=""><i
+                class="fas fa-chevron-left"></i></button>
+        <div class="slick-list draggable">
+            <div class="slick-track" style="opacity: 1; width: 3040px;">
+                <div class="banner-carousel-item slick-slide slick-current slick-active"
+                    style="background-image: url(https://sraconstruction.in/images/slider-main/Slider5.jpg); width: 1520px; position: relative; left: 0px; top: 0px; z-index: 1000; opacity: 1; transition: opacity 600ms;"
+                    data-slick-index="0" aria-hidden="false" tabindex="-1">
+                    <div class="container">
+                        <div class="box-slider-content">
+                            <div class="box-slider-text">
+                                <!-- <h2 class="box-slide-title">17 Years Of Excellence In</h2> -->
+                                <h1 class="box-slide-sub-title">A COMPANY YOU CAN<br>
+                                    TRUST TO BE WITH<br>
+                                    YOU AT EVERY STEP
+                                </h1>
+                                <!-- <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
+                   thinking team looking for talent like.</p> -->
+                                <!-- <p>
+                   <a href="services.html" class="slider btn btn-primary">Our Service</a>
+                 </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-carousel-item slick-slide"
+                    style="background-image: url(https://sraconstruction.in/images/slider-main/Slider4.jpg); width: 1520px; position: relative; left: -1520px; top: 0px; z-index: 998; opacity: 0; transition: opacity 600ms;"
+                    data-slick-index="1" aria-hidden="true" tabindex="0">
+                    <div class="slider-content text-left">
+                        <div class="container">
+                            <!-- <div class="box-slider-content">
+                  <div class="box-slider-text">
+                    <h2 class="box-slide-title">When Services Matters</h2>
+                    <h3 class="box-slide-sub-title">Your Choice is Simple</h3>
+                    <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
+                        thinking team looking for talent like.</p>
+                    <p><a href="about.html" class="slider btn btn-primary" aria-label="about-us">Know Us</a></p>
+                  </div>
+              </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <button type="button" class="carousel-control right slick-arrow" aria-label="carousel-control" style=""><i
+                class="fas fa-chevron-right"></i></button>
+    </div> --}}
 
     <section class="call-to-action no-padding">
         <div class="container">
@@ -280,16 +365,14 @@
                                     <div class="project-img-container">
                                         <a class="gallery-popup" href="{{ public_asset($gallery->image) }}"
                                             aria-label="project-img">
-                                            <img class="img-fluid"
-                                                src="{{ public_asset($gallery->image) }}"
+                                            <img class="img-fluid" src="{{ public_asset($gallery->image) }}"
                                                 alt="project-img">
 
                                         </a>
                                         <div class="project-item-info">
                                             <div class="project-item-info-content">
                                                 <h3 class="project-item-title">
-                                                    <a class="gallery-popup"
-                                                        href="{{ public_asset($gallery->image) }}"
+                                                    <a class="gallery-popup" href="{{ public_asset($gallery->image) }}"
                                                         aria-label="project-img">{{ $gallery->title }}</a>
                                                 </h3>
                                                 <!-- <p class="project-cat">Commercial, Interiors</p> -->
