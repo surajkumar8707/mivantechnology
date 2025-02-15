@@ -1,7 +1,39 @@
 @extends('layouts.app')
 @section('content')
-    <div>
+    <style>
+        .service-header {
+            padding-top: 5%;
+            padding-bottom: 15%;
+            background: url(https://sraconstruction.in/images/design.png), #3f1d71;
+            color: #ffffff;
+        }
 
+        .single-service-image1 {
+            background: url(https://media.istockphoto.com/id/488120139/photo/modern-real-estate.jpg?s=612x612&w=0&k=20&c=88jk1VLSoYboMmLUx173sHs_XrZ9pH21as8lC7WINQs=);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        .single-service-image2 {
+            background: url(https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?cs=srgb&dl=pexels-pixabay-247763.jpg&fm=jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        .single-service-image3 {
+            background: url(https://www.letsbuild.com/wp-content/uploads/2023/07/types-of-infrastructure.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        .single-service-image4 {
+            background: url(https://sceneloc8.com/wp-content/uploads/2024/03/4-64.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    </style>
+    <div>
         <section class="service-header">
             <div class="container">
                 <div class="row">
@@ -12,7 +44,8 @@
                             can Trust</h2>
                     </div>
                     <div class="col-lg-7" data-aos="fade-left">
-                        <p>The {{ $settings->app_name }} company is a top general contractor. However, what makes us different from
+                        <p>The {{ $settings->app_name }} company is a top general contractor. However, what makes us
+                            different from
                             our competitors is our commitment to safety, operational excellence, and an exceptional client
                             experience. We work collaboratively with you to reach your objectives. By hiring the industry's
                             best, we build the highest-performing teams; we are adept at working with design teams; we are
@@ -57,7 +90,8 @@
                     <div class="col-lg-4 single-service-info" data-aos="fade-right">
                         <h1>Industrial</h1>
                         <p>
-                            {{ $settings->app_name }} prioritizes cost-effective, efficient, and aesthetically pleasing industrial
+                            {{ $settings->app_name }} prioritizes cost-effective, efficient, and aesthetically pleasing
+                            industrial
                             building projects. We develop solutions tailored to our clientele. Our approach to every project
                             is to view it through the lens of the client's vision and objectives, managing every aspect of
                             the

@@ -16,7 +16,8 @@ return new class extends Migration
             $table->string('name')->nullable();
             $table->string('email');
             $table->string('phone')->nullable();
-            $table->string('subject')->nullable();
+            $table->string('city')->nullable();
+            $table->string('service')->nullable();
             $table->text('message')->nullable();
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();

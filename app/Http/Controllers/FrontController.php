@@ -106,15 +106,21 @@ class FrontController extends Controller
     public function saveContactUs(Request $request)
     {
         $validate = $request->validate([
-            'name' => 'nullable',
             'email' => 'required|email',
             'phone' => 'nullable',
             'subject' => 'nullable',
             'message' => 'required',
         ]);
 
-        // dd($validate);
-        $contact = Contact::create($validate);
+        $create = [
+            'name'=> $request->fname." ".$request->lname,
+            'email'=> $request->email,
+            'phone'=> $request->phone,
+            'city'=> $request->city,
+            'service'=> $request->service,
+            'message'=> $request->message,
+        ];
+        $contact = Contact::create($create);
         // dd($contact);
         return redirect()->back()->with('success', "Thank you for contacting US");
     }

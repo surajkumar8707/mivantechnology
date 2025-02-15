@@ -94,7 +94,7 @@
                 <div class="col-lg-3 col-sm-6 mb-5">
                     <div class="ts-team-wrapper">
                         <div class="team-img-wrapper">
-                            <img loading="lazy" src="https://sraconstruction.in/images/Mr.%20Anand%20Kumar%20Sinha.jpg" class="img-fluid about-director-img"
+                            <img loading="lazy" src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-851.jpg" class="img-fluid about-director-img"
                                 alt="team-img">
                         </div>
                         <div class="ts-team-content-classic">
@@ -110,7 +110,7 @@
                 <div class="col-lg-3 col-sm-6 mb-5">
                     <div class="ts-team-wrapper">
                         <div class="team-img-wrapper">
-                            <img loading="lazy" src="https://sraconstruction.in/images/Mr.%20Shabib%20Haris%20Sayyed.jpg"
+                            <img loading="lazy" src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-851.jpg"
                                 class="img-fluid about-director-img" alt="team-img">
                         </div>
                         <div class="ts-team-content-classic">
