@@ -1,9 +1,16 @@
 @extends('layouts.app')
 @section('title', 'Home Page')
 @section('content')
-    {{-- <div class="banner-carousel banner-carousel-2 mb-0">
+    <style>
+        .subscribe {
+            background: url(https://sraconstruction.in/images/connectbg.png);
+            background-size: cover;
+            padding: 0;
+        }
+    </style>
+    <div class="banner-carousel banner-carousel-2 mb-0">
         <div class="banner-carousel-item"
-            style="background-image:url({{ public_asset('assets/front/images/Infrastructure.jpg') }})">
+            style="background-image:url(https://sraconstruction.in/images/slider-main/Slider5.jpg)">
             <div class="container">
                 <div class="box-slider-content">
                     <div class="box-slider-text">
@@ -12,55 +19,33 @@
                             TRUST TO BE WITH<br>
                             YOU AT EVERY STEP
                         </h1>
+                        <!-- <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
+                         thinking team looking for talent like.</p> -->
+                        <!-- <p>
+                         <a href="services.html" class="slider btn btn-primary">Our Service</a>
+                       </p> -->
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="banner-carousel-item"
-            style="background-image:url({{ public_asset('assets/front/images/Commercial-Residential.jpg') }})">
+            style="background-image:url(https://sraconstruction.in/images/slider-main/Slider4.jpg)">
             <div class="slider-content text-left">
                 <div class="container">
+                    <!-- <div class="box-slider-content">
+                        <div class="box-slider-text">
+                          <h2 class="box-slide-title">When Services Matters</h2>
+                          <h3 class="box-slide-sub-title">Your Choice is Simple</h3>
+                          <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
+                              thinking team looking for talent like.</p>
+                          <p><a href="about.html" class="slider btn btn-primary" aria-label="about-us">Know Us</a></p>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
-    </div> --}}
-    <div class="banner-carousel banner-carousel-2 mb-0">
-        <div class="banner-carousel-item" style="background-image:url(https://sraconstruction.in/images/slider-main/Slider5.jpg)">
-          <div class="container">
-              <div class="box-slider-content">
-               <div class="box-slider-text">
-                   <!-- <h2 class="box-slide-title">17 Years Of Excellence In</h2> -->
-                   <h1 class="box-slide-sub-title">A COMPANY YOU CAN<br>
-                    TRUST TO BE WITH<br>
-                    YOU AT EVERY STEP
-                   </h1>
-                   <!-- <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
-                     thinking team looking for talent like.</p> -->
-                   <!-- <p>
-                     <a href="services.html" class="slider btn btn-primary">Our Service</a>
-                   </p> -->
-               </div>
-              </div>
-          </div>
-        </div>
-
-        <div class="banner-carousel-item" style="background-image:url(https://sraconstruction.in/images/slider-main/Slider4.jpg)">
-          <div class="slider-content text-left">
-              <div class="container">
-                <!-- <div class="box-slider-content">
-                    <div class="box-slider-text">
-                      <h2 class="box-slide-title">When Services Matters</h2>
-                      <h3 class="box-slide-sub-title">Your Choice is Simple</h3>
-                      <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
-                          thinking team looking for talent like.</p>
-                      <p><a href="about.html" class="slider btn btn-primary" aria-label="about-us">Know Us</a></p>
-                    </div>
-                </div> -->
-              </div>
-          </div>
-        </div>
-      </div>
+    </div>
     {{-- <div class="banner-carousel banner-carousel-2 mb-0 slick-initialized slick-slider"><button type="button"
             class="carousel-control left slick-arrow" aria-label="carousel-control" style=""><i
                 class="fas fa-chevron-left"></i></button>
@@ -274,7 +259,7 @@
         </div><!-- Container end -->
     </section><!-- Main container end -->
 
-    <section class="content testimonial-area-bg">
+    {{-- <section class="content testimonial-area-bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -329,6 +314,103 @@
                                 </div>
                             </div><!-- Quote item end -->
                         </div>
+                    </div>
+                </div><!-- Col end -->
+            </div>
+        </div>
+    </section><!-- Content end --> --}}
+
+    <section class="content testimonial-area-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="column-title text-center color-white">OUR CLIENT'S RESPONSES</h3>
+
+                    <div id="testimonial-slide" class="testimonial-slide">
+
+                        <div class="item">
+                            <div class="quote-item">
+                                <span class="quote-text">
+                                    “It is certified that the works under M/S SRA Construction which include Steel structure
+                                    work of bridge in the premises, civil and allied works of fire-lifts, infra-works at
+                                    ground floor, civil and allied works of Bungalow-58 from plinth to LMR including RCC,
+                                    plaster and waterproofing have been satisfactorily completed; that all charges or bills
+                                    for labour or services performed or materials furnished, and other charges against the
+                                    subcontractors, have been paid in full and in accordance with the terms of the contract
+                                    as per our information.
+                                    During the execution period from 2014 to 2022 (till date, 15th January,2022), the
+                                    approach and behaviors of the staffs and owners have been excellent.
+                                    Our best wishes to SRA Construction for future endeavors.”
+                                </span>
+
+                                <div class="quote-item-footer">
+                                    <!-- <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial1.png" alt="testimonial"> -->
+                                    <div class="quote-item-info">
+                                        <h3 class="quote-author">Mr. Narottam Kumar (V.P)</h3>
+                                        <span class="quote-subtext">M/S. T. Bhimjiyani Reality</span>
+                                    </div>
+                                </div>
+                            </div><!-- Quote item end -->
+                        </div>
+
+                        <div class="item">
+                            <div class="quote-item">
+                                <span class="quote-text">
+                                    “This letter serves as our endorsement for M/s SRA Constructions. Since the commencement
+                                    of awarded works in August 2021, the progress, quality control and overall project
+                                    management have been impressive and it has achieved milestones as planned. The
+                                    cordination amongst staffs, higher management and with ourselves may be rated very good.
+                                    M/S SRA Constructions has so far managed all the construction activities, site
+                                    management and other issues prudently.
+                                    We wish all the best for it's future endeavors.”
+                                </span>
+
+                                <div class="quote-item-footer">
+                                    <!-- <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial1.png" alt="testimonial"> -->
+                                    <div class="quote-item-info">
+                                        <h3 class="quote-author">Mr. Pawan Kumar ( Sr. Manager )</h3>
+                                        <span class="quote-subtext">M/S Reliance, Rabale, Navi Mumbai</span>
+                                    </div>
+                                </div>
+                            </div><!-- Quote item end -->
+                        </div>
+
+                        <!-- <div class="item">
+                          <div class="quote-item">
+                              <span class="quote-text">
+                                “They did an excellent job. It looks great! It only took one day,
+                                  and the SRA Construction did an excellent job... I highly
+                                  recommend them if you want a professional job done right.”
+                              </span>
+
+                              <div class="quote-item-footer">
+                                <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial2.png" alt="testimonial">
+                                <div class="quote-item-info">
+                                    <h3 class="quote-author">Weldon Cash</h3>
+                                     <span class="quote-subtext">CFO, First Choice</span>
+                                </div>
+                              </div>
+                          </div>Quote item end
+                        </div> -->
+
+                        <!-- <div class="item">
+                          <div class="quote-item">
+                              <span class="quote-text">
+                                “They did an excellent job. It looks great! It only took one day,
+                                  and the SRA Construction did an excellent job... I highly
+                                  recommend them if you want a professional job done right.”
+                              </span>
+
+                              <div class="quote-item-footer">
+                                <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial3.png" alt="testimonial">
+                                <div class="quote-item-info">
+                                    <h3 class="quote-author">Minter Puchan</h3>
+                                     <span class="quote-subtext">Director, AKT</span>
+                                </div>
+                              </div>
+                          </div>Quote item end
+                        </div> -->
+
                     </div>
                 </div><!-- Col end -->
             </div>
