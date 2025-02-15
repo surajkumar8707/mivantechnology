@@ -2466,7 +2466,7 @@ img.testimonial-thumb {
 .overlay-yellow {
   width: 100%;
   height: 100%;
-  background-color: #eabc62;
+  background-color: RGBA(253, 196, 81, 0.6);
   z-index: 2;
 }
 
