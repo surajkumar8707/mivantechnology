@@ -2,7 +2,132 @@
 @section('title', getSettings()->app_name . ':: About Page')
 @section('content')
 
-    <div id="banner-area" class="banner-area1" style="background-image:url(images/design.png);background-color:#3f1d71 ;">
+    <style>
+        .about-director-section {
+    padding: 0;
+    padding-top: 2%;
+    background: url(https://sraconstruction.in/images/design.png), #3f1d71;
+    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.75) inset;
+}
+    </style>
+    <div id="banner-area" class="banner-area" style="background-image:url(images/design.png);background-color:#3f1d71 ;">
+        <div class="banner-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="banner-heading">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a href="#">About Us</a></li>
+                                </ol>
+                            </nav>
+                            <h1 class="banner-title">The Quality &amp; Reputation to get<br>
+                                the job done right</h1>
+                        </div>
+                    </div><!-- Col end -->
+                </div><!-- Row end -->
+            </div><!-- Container end -->
+        </div><!-- Banner text end -->
+    </div>
+
+    <section class="about-header-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 about-box text-center">
+                    @if (isset($settings->header_image) and !empty($settings->header_image))
+                        <img loading="{{ $settings->app_name }}" class="img-fluid" src="{{ public_asset($settings->header_image) }}"
+                            alt="{{ $settings->app_name }}">
+                    @else
+                        {{ $settings->app_name }}
+                    @endif
+                    {{-- <img src="images/about/1.png" alt="" class="img-fluid"> --}}
+                    <p>We are a construction company located in Sivan Bihar construction solutions since
+                        2019. We provide our customers with quality buildings that are constructed with great craftsmanship.
+                        We employ over 100 qualified and experienced employees, many of whom have worked together for more
+                        than Twenty five years.
+                    </p>
+                </div>
+                <div class="col-lg-12 about-para">
+                    <p>
+                        Building and construction management is what we specialize in, and we handle all types of commercial
+                        and residential projects, as well as infrastructure, industrial, and river front projects. Our
+                        expertise encompasses both traditional materials and modern construction methods. We are dedicated
+                        to providing the best service and workmanship. We have a wide network of quality contractors and
+                        professionals in addition to our in-house expertise.
+                    </p>
+                    <p>
+                        We are easy to work with, honest in our approach, proactive in our communication and forthcoming
+                        with information. Let's work together to create a building you're proud of.
+                    </p>
+                </div>
+                <div class="col-lg-3 about-mission-img">
+
+                    <h1>
+                        OUR<br>
+                        MISSION &amp; VISION
+                    </h1>
+                </div>
+                <div class="col-lg-9 about-mission-text">
+                    <p>We strive to provide quality workmanship and customer service while maintaining the highest level of
+                        professional, honest, and fair behaviour in our interactions with our customers, employees, and
+                        vendors.
+                    </p>
+                    <p>Our vision is to be the premier engineering, construction, and project management organization,
+                        delivering extraordinary results for our customers, building rewarding careers for our employees,
+                        and earning a fair return on the value we deliver.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="main-container" class="main-container about-director-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <h3 class="section-sub-title1">Our Directors</h3>
+                </div>
+            </div>
+            <!--/ Title row end -->
+
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-sm-6 mb-5">
+                    <div class="ts-team-wrapper">
+                        <div class="team-img-wrapper">
+                            <img loading="lazy" src="https://sraconstruction.in/images/Mr.%20Anand%20Kumar%20Sinha.jpg" class="img-fluid about-director-img"
+                                alt="team-img">
+                        </div>
+                        <div class="ts-team-content-classic">
+                            <h3 class="ts-name">Mr. Anand Kumar Sinha</h3>
+                            <!-- <p class="ts-designation">Chief Operating Officer</p> -->
+
+                        </div>
+                    </div>
+                    <!--/ Team wrapper 1 end -->
+
+                </div><!-- Col end -->
+                <div class="col-lg-1 "></div>
+                <div class="col-lg-3 col-sm-6 mb-5">
+                    <div class="ts-team-wrapper">
+                        <div class="team-img-wrapper">
+                            <img loading="lazy" src="https://sraconstruction.in/images/Mr.%20Shabib%20Haris%20Sayyed.jpg"
+                                class="img-fluid about-director-img" alt="team-img">
+                        </div>
+                        <div class="ts-team-content-classic">
+                            <h3 class="ts-name">Mr. Shabib Haris Sayyed</h3>
+                            <!-- <p class="ts-designation">Chief Operating Officer</p> -->
+
+                        </div>
+                    </div>
+                    <!--/ Team wrapper 2 end -->
+                </div><!-- Col end -->
+
+            </div><!-- Content row 1 end -->
+
+
+        </div><!-- Container end -->
+    </section>
+    {{-- <div id="banner-area" class="banner-area1" style="background-image:url(images/design.png);background-color:#3f1d71 ;">
         <div class="banner-text">
             <div class="container">
                 <div class="row">
@@ -48,6 +173,6 @@
             <p>Want to learn more about our innovative construction solutions? <br>Contact us at <strong>{{ $settings->email }}</strong>
                 or call us at <strong>{{ $settings->contact }}</strong>.</p>
         </div>
-    </section>
+    </section> --}}
 
 @endsection

@@ -9,6 +9,15 @@
             margin-top: 0%;
             margin-bottom: 0%;
         }
+
+        .banner-image {
+            padding: 0;
+            height: 50vh;
+            background: url(https://sraconstruction.in/images/image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 4%;
+        }
     </style>
     <div id="banner-area" class="banner-area" style="background-image:url(images/design.png);background-color:#3f1d71 ;">
         <div class="banner-text">
@@ -35,8 +44,8 @@
                 <div class="col-lg-6 info-section">
                     <div>
                         <!-- <span class="ts-service-icon">
-                                  <i class="fas fa-map-marker-alt mr-0"></i>
-                                </span> -->
+                                      <i class="fas fa-map-marker-alt mr-0"></i>
+                                    </span> -->
                         <div class="ts-service-box-content">
                             <h4>Address</h4>
                             <p>{{ $settings->address }}</p>
@@ -45,8 +54,8 @@
 
                     <div>
                         <!-- <span class="ts-service-icon">
-                                  <i class="fa fa-envelope mr-0"></i>
-                                </span> -->
+                                      <i class="fa fa-envelope mr-0"></i>
+                                    </span> -->
                         <div class="ts-service-box-content">
                             <h4>Email Us</h4>
                             <p>{{ $settings->email }}</p>
@@ -55,8 +64,8 @@
 
                     <div>
                         <!-- <span class="ts-service-icon">
-                                  <i class="fa fa-phone-square mr-0"></i>
-                                </span> -->
+                                      <i class="fa fa-phone-square mr-0"></i>
+                                    </span> -->
                         <div class="ts-service-box-content">
                             <h4>Call Us</h4>
                             <p>{{ $settings->contact }}</p>
@@ -105,8 +114,7 @@
                 <div class="col-md-6 contact-form-section">
                     <h3 class="column-title">Fill out our form below, an SRA Constrcution Representative
                         will be in touch for further details!</h3>
-                    <form id="request" class="main_form" method="POST"
-                        action="{{ route('front.save.contact') }}">
+                    <form id="request" class="main_form" method="POST" action="{{ route('front.save.contact') }}">
                         @csrf
                         <div class="row">
                             <div class="col-md-12 mt-4">
@@ -132,5 +140,9 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="banner-image">
+
     </section>
 @endsection
