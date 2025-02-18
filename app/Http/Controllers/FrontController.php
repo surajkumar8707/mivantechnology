@@ -63,8 +63,10 @@ class FrontController extends Controller
     }
     public function gallery()
     {
-        $galleries = Gallery::where('status', 1)->get();
-        return view('gallery', compact('galleries'));
+        $mivans = Gallery::where(['status' => 1, 'type' => 'mivan'])->get();
+        $post_tensionings = Gallery::where(['status' => 1, 'type' => 'post_tensioning'])->get();
+        // dd($mivans->toArray(), $post_tensionings->toArray());
+        return view('gallery', compact('mivans', 'post_tensionings'));
     }
     public function construction()
     {

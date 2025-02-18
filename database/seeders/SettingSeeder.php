@@ -19,7 +19,7 @@ class SettingSeeder extends Seeder
         // Seed new data
         Setting::create([
             'app_name' => 'Mivantechnology',
-            'email' => 'construction.mivam@gmail.com, corp@mivantechnology.com',
+            'email' => 'Construction.mivan@gmail.com, corp@mivantechnology.com',
             'whatsapp' => '9324394183',
             'contact' => '9324394183',
             'address' => 'Sadhu medicine complex fatehpur Siwan Bihar 841226',

@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->string('image');
             $table->boolean('status')->default(true);
+            $table->enum('type', ['mivan', 'post_tensioning'])->default('mivan');
             $table->timestamps();
         });
     }

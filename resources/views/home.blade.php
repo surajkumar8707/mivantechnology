@@ -7,6 +7,29 @@
             background-size: cover;
             padding: 0;
         }
+
+        .service-1::before {
+            content: "";
+            background: url("");
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -82px;
+            padding: 41px;
+        }
+
+        .service-4::after {
+            content: "";
+            background: url("");
+            background-size: cover;
+            background-position: right center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -82px;
+            padding: 41px;
+        }
     </style>
     <div class="banner-carousel banner-carousel-2 mb-0">
         <div class="banner-carousel-item"
@@ -20,10 +43,10 @@
                             YOU AT EVERY STEP
                         </h1>
                         <!-- <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
-                         thinking team looking for talent like.</p> -->
+                                         thinking team looking for talent like.</p> -->
                         <!-- <p>
-                         <a href="services.html" class="slider btn btn-primary">Our Service</a>
-                       </p> -->
+                                         <a href="services.html" class="slider btn btn-primary">Our Service</a>
+                                       </p> -->
                     </div>
                 </div>
             </div>
@@ -34,14 +57,14 @@
             <div class="slider-content text-left">
                 <div class="container">
                     <!-- <div class="box-slider-content">
-                        <div class="box-slider-text">
-                          <h2 class="box-slide-title">When Services Matters</h2>
-                          <h3 class="box-slide-sub-title">Your Choice is Simple</h3>
-                          <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
-                              thinking team looking for talent like.</p>
-                          <p><a href="about.html" class="slider btn btn-primary" aria-label="about-us">Know Us</a></p>
-                        </div>
-                    </div> -->
+                                        <div class="box-slider-text">
+                                          <h2 class="box-slide-title">When Services Matters</h2>
+                                          <h3 class="box-slide-sub-title">Your Choice is Simple</h3>
+                                          <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
+                                              thinking team looking for talent like.</p>
+                                          <p><a href="about.html" class="slider btn btn-primary" aria-label="about-us">Know Us</a></p>
+                                        </div>
+                                    </div> -->
                 </div>
             </div>
         </div>
@@ -116,21 +139,21 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-3 col-md-6 mb-5">
-                    <h2>TRUSTED BY<br> TOP INDUSTRY<br> ORGANIZATIONS</h2>
+                <div class="col-md-7 mb-5">
+                    <h2>TRUSTED BY TOP INDUSTRY ORGANIZATIONS</h2>
                 </div>
 
-                <div class="col-lg-3 col-md-6 mb-5">
+                <div class="col-md-5 mb-5">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
-                            <img loading="lazy" class="w-100" src="https://sraconstruction.in/images/clients/godrej.png"
+                            <img loading="lazy" class="w-100" src="{{ public_asset('assets/front/images/lodha.jpg') }}"
                                 alt="service-image">
                         </div>
 
                     </div><!-- Service1 end -->
                 </div><!-- Col 1 end -->
 
-                <div class="col-lg-3 col-md-6 mb-5">
+                {{-- <div class="col-lg-3 col-md-6 mb-5">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
                             <img loading="lazy" class="w-100" src="https://sraconstruction.in/images/clients/sitaram.png"
@@ -148,7 +171,7 @@
                         </div>
 
                     </div><!-- Service3 end -->
-                </div><!-- Col 3 end -->
+                </div><!-- Col 3 end --> --}}
 
             </div><!-- Content row end -->
         </div><!-- Container end -->
@@ -324,30 +347,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="column-title text-center color-white">OUR CLIENT'S RESPONSES</h3>
+                    <h3 class="column-title text-center color-white">CLIENT FEEDBACK</h3>
 
                     <div id="testimonial-slide" class="testimonial-slide">
 
                         <div class="item">
                             <div class="quote-item">
                                 <span class="quote-text">
-                                    “It is certified that the works under M/S SRA Construction which include Steel structure
-                                    work of bridge in the premises, civil and allied works of fire-lifts, infra-works at
-                                    ground floor, civil and allied works of Bungalow-58 from plinth to LMR including RCC,
-                                    plaster and waterproofing have been satisfactorily completed; that all charges or bills
-                                    for labour or services performed or materials furnished, and other charges against the
-                                    subcontractors, have been paid in full and in accordance with the terms of the contract
-                                    as per our information.
-                                    During the execution period from 2014 to 2022 (till date, 15th January,2022), the
-                                    approach and behaviors of the staffs and owners have been excellent.
-                                    Our best wishes to SRA Construction for future endeavors.”
+                                    “We are highly satisfied with the quality of work delivered by M/S {{ $settings->app_name }} Construction.
+                                    Their team demonstrated excellent professionalism throughout the execution of our
+                                    projects, from the design phase to completion. The steel structure of the bridge and the
+                                    construction of our bungalow were completed on time and exceeded our expectations in
+                                    terms of craftsmanship and attention to detail. We highly recommend their services for
+                                    future projects.”
                                 </span>
 
                                 <div class="quote-item-footer">
-                                    <!-- <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial1.png" alt="testimonial"> -->
                                     <div class="quote-item-info">
-                                        <h3 class="quote-author">Mr. Narottam Kumar (V.P)</h3>
-                                        <span class="quote-subtext">M/S. T. Bhimjiyani Reality</span>
+                                        <h3 class="quote-author">Mr. Rahul Singh (Director)</h3>
+                                        <span class="quote-subtext">M/S. Shree Construction Co.</span>
                                     </div>
                                 </div>
                             </div><!-- Quote item end -->
@@ -356,67 +374,45 @@
                         <div class="item">
                             <div class="quote-item">
                                 <span class="quote-text">
-                                    “This letter serves as our endorsement for M/s SRA Constructions. Since the commencement
-                                    of awarded works in August 2021, the progress, quality control and overall project
-                                    management have been impressive and it has achieved milestones as planned. The
-                                    cordination amongst staffs, higher management and with ourselves may be rated very good.
-                                    M/S SRA Constructions has so far managed all the construction activities, site
-                                    management and other issues prudently.
-                                    We wish all the best for it's future endeavors.”
+                                    “We had the pleasure of working with M/S {{ $settings->app_name }} Construction on several key projects. The
+                                    professionalism, attention to detail, and consistent project delivery were impressive.
+                                    They ensured that each project was executed in compliance with safety regulations,
+                                    quality standards, and timelines. We look forward to collaborating with them on future
+                                    developments.”
                                 </span>
 
                                 <div class="quote-item-footer">
-                                    <!-- <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial1.png" alt="testimonial"> -->
                                     <div class="quote-item-info">
-                                        <h3 class="quote-author">Mr. Pawan Kumar ( Sr. Manager )</h3>
-                                        <span class="quote-subtext">M/S Reliance, Rabale, Navi Mumbai</span>
+                                        <h3 class="quote-author">Mr. Ajeet Sharma (Project Manager)</h3>
+                                        <span class="quote-subtext">M/S Urban Build Pvt. Ltd.</span>
                                     </div>
                                 </div>
                             </div><!-- Quote item end -->
                         </div>
 
-                        <!-- <div class="item">
-                          <div class="quote-item">
-                              <span class="quote-text">
-                                “They did an excellent job. It looks great! It only took one day,
-                                  and the SRA Construction did an excellent job... I highly
-                                  recommend them if you want a professional job done right.”
-                              </span>
+                        <div class="item">
+                            <div class="quote-item">
+                                <span class="quote-text">
+                                    “{{ $settings->app_name }} Construction has delivered exceptional service on our project from start to finish.
+                                    Their ability to handle complex tasks and deliver within budget has been remarkable.
+                                    We’ve been extremely pleased with their communication, as well as their commitment to
+                                    quality work. We highly recommend them for any construction-related needs.”
+                                </span>
 
-                              <div class="quote-item-footer">
-                                <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial2.png" alt="testimonial">
-                                <div class="quote-item-info">
-                                    <h3 class="quote-author">Weldon Cash</h3>
-                                     <span class="quote-subtext">CFO, First Choice</span>
+                                <div class="quote-item-footer">
+                                    <div class="quote-item-info">
+                                        <h3 class="quote-author">Mr. Vikram Soni (Managing Director)</h3>
+                                        <span class="quote-subtext">M/S Techbuild Solutions</span>
+                                    </div>
                                 </div>
-                              </div>
-                          </div>Quote item end
-                        </div> -->
-
-                        <!-- <div class="item">
-                          <div class="quote-item">
-                              <span class="quote-text">
-                                “They did an excellent job. It looks great! It only took one day,
-                                  and the SRA Construction did an excellent job... I highly
-                                  recommend them if you want a professional job done right.”
-                              </span>
-
-                              <div class="quote-item-footer">
-                                <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial3.png" alt="testimonial">
-                                <div class="quote-item-info">
-                                    <h3 class="quote-author">Minter Puchan</h3>
-                                     <span class="quote-subtext">Director, AKT</span>
-                                </div>
-                              </div>
-                          </div>Quote item end
-                        </div> -->
+                            </div><!-- Quote item end -->
+                        </div>
 
                     </div>
                 </div><!-- Col end -->
             </div>
         </div>
-    </section><!-- Content end -->
-
+    </section>
 
 
     @if (count($galleries) > 0)
@@ -438,7 +434,7 @@
                 <div class="row">
                     <div class="col-12">
                         <!-- project filter end -->
-                        <div class="row shuffle-wrapper">
+                        {{-- <div class="row shuffle-wrapper">
                             <div class="col-1 shuffle-sizer"></div>
 
                             @foreach ($galleries as $gallery)
@@ -464,7 +460,85 @@
                                 </div>
                             @endforeach
 
-                        </div><!-- shuffle end -->
+                        </div><!-- shuffle end --> --}}
+                        <div class="row shuffle-wrapper shuffle"
+                            style="position: relative; overflow: hidden; height: 273.6px; transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1);">
+                            <div class="col-1 shuffle-sizer"></div>
+
+                            <div class="col-lg-4 col-sm-6 shuffle-item shuffle-item--visible"
+                                data-groups="[&quot;government&quot;,&quot;healthcare&quot;]"
+                                style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+                                <div class="project-img-container">
+                                    <a class="gallery-popup cboxElement"
+                                        href="{{ public_asset('assets/front/images/gallery/IMG-20250201-WA0024.jpg') }}"
+                                        aria-label="project-img">
+                                        <img class="img-fluid"
+                                            src="{{ public_asset('assets/front/images/gallery/IMG-20250201-WA0024.jpg') }}"
+                                            alt="project-img">
+
+                                    </a>
+                                    <div class="project-item-info">
+                                        <div class="project-item-info-content">
+                                            <h3 class="project-item-title">
+                                                <a class="gallery-popup cboxElement"
+                                                    href="{{ public_asset('assets/front/images/gallery/IMG-20250201-WA0024.jpg') }}"
+                                                    aria-label="project-img">Project Building</a>
+                                            </h3>
+                                            <!-- <p class="project-cat">Commercial, Interiors</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 shuffle-item shuffle-item--visible"
+                                data-groups="[&quot;government&quot;,&quot;healthcare&quot;]"
+                                style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(380px, 0px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+                                <div class="project-img-container">
+                                    <a class="gallery-popup cboxElement"
+                                        href="{{ public_asset('assets/front/images/gallery/IMG-20250201-WA0012.jpg') }}"
+                                        aria-label="project-img">
+                                        <img class="img-fluid"
+                                            src="{{ public_asset('assets/front/images/gallery/IMG-20250201-WA0012.jpg') }}"
+                                            alt="project-img">
+
+                                    </a>
+                                    <div class="project-item-info">
+                                        <div class="project-item-info-content">
+                                            <h3 class="project-item-title">
+                                                <a class="gallery-popup cboxElement"
+                                                    href="{{ public_asset('assets/front/images/gallery/IMG-20250201-WA0012.jpg') }}"
+                                                    aria-label="project-img">Project Building</a>
+                                            </h3>
+                                            <!-- <p class="project-cat">Commercial, Interiors</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 shuffle-item shuffle-item--visible"
+                                data-groups="[&quot;government&quot;,&quot;healthcare&quot;]"
+                                style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(760px, 0px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+                                <div class="project-img-container">
+                                    <a class="gallery-popup cboxElement"
+                                        href="{{ public_asset('assets/front/images/gallery/IMG-20250201-WA0022.jpg') }}"
+                                        aria-label="project-img">
+                                        <img class="img-fluid"
+                                            src="{{ public_asset('assets/front/images/gallery/IMG-20250201-WA0022.jpg') }}"
+                                            alt="project-img">
+
+                                    </a>
+                                    <div class="project-item-info">
+                                        <div class="project-item-info-content">
+                                            <h3 class="project-item-title">
+                                                <a class="gallery-popup cboxElement"
+                                                    href="{{ public_asset('assets/front/images/gallery/IMG-20250201-WA0022.jpg') }}"
+                                                    aria-label="project-img">Project Building</a>
+                                            </h3>
+                                            <!-- <p class="project-cat">Commercial, Interiors</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
 

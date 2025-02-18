@@ -17,46 +17,82 @@ class GallerySeeder extends Seeder
         $default_galleries = array(
             [
                 'title' => 'Project Building',
-                'image' => "assets/front/images/gallery/IMG-20250201-WA0024.jpg",
+                'image' => "assets/front/images/gallery/gallery_1.jpg",
                 'status' => true,
+                'type' => 'mivan',
             ],
             [
                 'title' => 'Project Building',
-                'image' => "assets/front/images/gallery/IMG-20250201-WA0012.jpg",
+                'image' => "assets/front/images/gallery/gallery_2.jpg",
                 'status' => true,
+                'type' => 'mivan',
             ],
             [
                 'title' => 'Project Building',
-                'image' => "assets/front/images/gallery/IMG-20250201-WA0022.jpg",
+                'image' => "assets/front/images/gallery/gallery_3.jpg",
                 'status' => true,
+                'type' => 'mivan',
             ],
             [
                 'title' => 'Project Building',
-                'image' => "assets/front/images/gallery/IMG-20250201-WA0017.jpg",
+                'image' => "assets/front/images/gallery/gallery_4.jpg",
                 'status' => true,
+                'type' => 'mivan',
             ],
             [
                 'title' => 'Project Building',
-                'image' => "assets/front/images/gallery/IMG-20250201-WA0030.jpg",
+                'image' => "assets/front/images/gallery/gallery_5.jpg",
                 'status' => true,
+                'type' => 'mivan',
             ],
             [
                 'title' => 'Project Building',
-                'image' => "assets/front/images/gallery/IMG-20250201-WA0029.jpg",
+                'image' => "assets/front/images/gallery/gallery_6.jpg",
                 'status' => true,
+                'type' => 'mivan',
             ],
             [
                 'title' => 'Project Building',
-                'image' => "assets/front/images/gallery/IMG-20250201-WA0011.jpg",
+                'image' => "assets/front/images/gallery/gallery_7.jpg",
                 'status' => true,
+                'type' => 'mivan',
             ],
             [
                 'title' => 'Project Building',
-                'image' => "assets/front/images/gallery/IMG-20250201-WA0015.jpg",
+                'image' => "assets/front/images/gallery/gallery_8.jpg",
                 'status' => true,
+                'type' => 'post_tensioning',
             ],
-
-
+            [
+                'title' => 'Project Building',
+                'image' => "assets/front/images/gallery/gallery_9.jpg",
+                'status' => true,
+                'type' => 'post_tensioning',
+            ],
+            [
+                'title' => 'Project Building',
+                'image' => "assets/front/images/gallery/gallery_10.jpg",
+                'status' => true,
+                'type' => 'post_tensioning',
+            ],
+            [
+                'title' => 'Project Building',
+                'image' => "assets/front/images/gallery/gallery_11.jpg",
+                'status' => true,
+                'type' => 'post_tensioning',
+            ],
+            [
+                'title' => 'Project Building',
+                'image' => "assets/front/images/gallery/gallery_12.jpg",
+                'status' => true,
+                'type' => 'post_tensioning',
+            ],
+            [
+                'title' => 'Project Building',
+                'image' => "assets/front/images/gallery/gallery_13.jpg",
+                'status' => true,
+                'type' => 'post_tensioning',
+            ],
         );
 
         if (count($default_galleries) > 0) {

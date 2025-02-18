@@ -82,7 +82,7 @@
     </section>
 
     <section id="main-container" class="main-container about-director-section">
-        <div class="container">
+        <div class="container my-3 py-2">
             <div class="row text-center">
                 <div class="col-lg-12">
                     <h3 class="section-sub-title1">Our Directors</h3>
@@ -90,7 +90,20 @@
             </div>
             <!--/ Title row end -->
 
-            <div class="row justify-content-center">
+            <div class="text-center">
+                <div class="ts-team-wrapper">
+                    <div class="team-img-wrapper">
+                        <img width="35%" loading="lazy" src="{{ public_asset('assets/front/images/amit_kumar.jpg') }}" class="img-fluid about-director-img"
+                            alt="team-img">
+                    </div>
+                    <div class="ts-team-content-classic">
+                        <h3 class="ts-name">Mr. Amit Kumar</h3>
+                        <!-- <p class="ts-designation">Chief Operating Officer</p> -->
+
+                    </div>
+                </div>
+            </div>
+            {{-- <div class="row justify-content-center">
                 <div class="col-lg-3 col-sm-6 mb-5">
                     <div class="ts-team-wrapper">
                         <div class="team-img-wrapper">
@@ -122,7 +135,7 @@
                     <!--/ Team wrapper 2 end -->
                 </div><!-- Col end -->
 
-            </div><!-- Content row 1 end -->
+            </div><!-- Content row 1 end --> --}}
 
 
         </div><!-- Container end -->

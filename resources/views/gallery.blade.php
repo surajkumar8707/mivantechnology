@@ -24,13 +24,10 @@
 
     <section id="project-area" class="project-area solid-bg single-service-gap">
         <div class="container">
-
-            <!--/ Title row end -->
-
+            <h1 class="text-center">Mivans</h1>
             <div class="row">
-
-                @foreach ($galleries as $gallery)
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                @foreach ($mivans as $gallery)
+                    <div class="col-md-4 col-xs-6 thumb">
                         <a href="{{ public_asset($gallery->image) }}" class="fancybox" rel="ligthbox">
                             <img src="{{ public_asset($gallery->image) }}" class="zoom img-fluid " alt="">
                         </a>
@@ -38,7 +35,22 @@
                 @endforeach
             </div>
         </div>
-    </section><!-- Project area end -->
+    </section>
+
+    <section id="project-area" class="project-area solid-bg single-service-gap">
+        <div class="container">
+            <h1 class="text-center">Post Tensionings</h1>
+            <div class="row">
+                @foreach ($post_tensionings as $gallery)
+                    <div class="col-md-4 col-xs-6 thumb">
+                        <a href="{{ public_asset($gallery->image) }}" class="fancybox" rel="ligthbox">
+                            <img src="{{ public_asset($gallery->image) }}" class="zoom img-fluid " alt="">
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
 
 
 @endsection
