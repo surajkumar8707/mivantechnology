@@ -137,23 +137,29 @@
 
     <section id="ts-features" class="ts-features pb-2">
         <div class="container">
+            <h2 class="text-center mb-5">TRUSTED BY TOP INDUSTRY ORGANIZATIONS</h2>
             <div class="row">
 
-                <div class="col-md-7 mb-5">
-                    <h2>TRUSTED BY TOP INDUSTRY ORGANIZATIONS</h2>
-                </div>
-
-                <div class="col-md-5 mb-5">
+                <div class="col-lg-3 col-md-6 mb-5">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
-                            <img loading="lazy" class="w-100" src="{{ public_asset('assets/front/images/lodha.jpg') }}"
+                            <img loading="lazy" class="w-100" src="https://sraconstruction.in/images/clients/godrej.png"
                                 alt="service-image">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <div class="ts-service-box">
+                        <div class="ts-service-image-wrapper">
+                            <img loading="lazy" class="w-100" src="{{ public_asset('assets/front/images/lodha.jpg') }}">
                         </div>
 
                     </div><!-- Service1 end -->
                 </div><!-- Col 1 end -->
 
-                {{-- <div class="col-lg-3 col-md-6 mb-5">
+                <div class="col-lg-3 col-md-6 mb-5">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
                             <img loading="lazy" class="w-100" src="https://sraconstruction.in/images/clients/sitaram.png"
@@ -171,11 +177,12 @@
                         </div>
 
                     </div><!-- Service3 end -->
-                </div><!-- Col 3 end --> --}}
+                </div><!-- Col 3 end -->
 
             </div><!-- Content row end -->
         </div><!-- Container end -->
-    </section><!-- Feature are end -->
+    </section>
+    {{--  --}}
 
     <section id="main-container" class="main-container">
         <div class="container">
