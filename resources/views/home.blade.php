@@ -151,7 +151,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 mb-5">
-                    <div class="ts-service-box">
+                    <div class="mt-3 ts-service-box">
                         <div class="ts-service-image-wrapper">
                             <img loading="lazy" class="w-100" src="{{ public_asset('assets/front/images/lodha.jpg') }}">
                         </div>
