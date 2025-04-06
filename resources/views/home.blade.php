@@ -38,15 +38,21 @@
                 <div class="box-slider-content">
                     <div class="box-slider-text">
                         <!-- <h2 class="box-slide-title">17 Years Of Excellence In</h2> -->
+                        <div>
+                            @if (isset($settings->header_image) and !empty($settings->header_image))
+                                <img class="w-50" loading="{{ $settings->app_name }}" src="{{ public_asset($settings->header_image) }}"
+                                    alt="{{ $settings->app_name }}">
+                            @endif
+                        </div>
                         <h1 class="box-slide-sub-title">A COMPANY YOU CAN<br>
                             TRUST TO BE WITH<br>
                             YOU AT EVERY STEP
                         </h1>
                         <!-- <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
-                                         thinking team looking for talent like.</p> -->
+                                             thinking team looking for talent like.</p> -->
                         <!-- <p>
-                                         <a href="services.html" class="slider btn btn-primary">Our Service</a>
-                                       </p> -->
+                                             <a href="services.html" class="slider btn btn-primary">Our Service</a>
+                                           </p> -->
                     </div>
                 </div>
             </div>
@@ -57,14 +63,14 @@
             <div class="slider-content text-left">
                 <div class="container">
                     <!-- <div class="box-slider-content">
-                                        <div class="box-slider-text">
-                                          <h2 class="box-slide-title">When Services Matters</h2>
-                                          <h3 class="box-slide-sub-title">Your Choice is Simple</h3>
-                                          <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
-                                              thinking team looking for talent like.</p>
-                                          <p><a href="about.html" class="slider btn btn-primary" aria-label="about-us">Know Us</a></p>
-                                        </div>
-                                    </div> -->
+                                            <div class="box-slider-text">
+                                              <h2 class="box-slide-title">When Services Matters</h2>
+                                              <h3 class="box-slide-sub-title">Your Choice is Simple</h3>
+                                              <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
+                                                  thinking team looking for talent like.</p>
+                                              <p><a href="about.html" class="slider btn btn-primary" aria-label="about-us">Know Us</a></p>
+                                            </div>
+                                        </div> -->
                 </div>
             </div>
         </div>
@@ -361,7 +367,8 @@
                         <div class="item">
                             <div class="quote-item">
                                 <span class="quote-text">
-                                    “We are highly satisfied with the quality of work delivered by M/S {{ $settings->app_name }} Construction.
+                                    “We are highly satisfied with the quality of work delivered by M/S
+                                    {{ $settings->app_name }} Construction.
                                     Their team demonstrated excellent professionalism throughout the execution of our
                                     projects, from the design phase to completion. The steel structure of the bridge and the
                                     construction of our bungalow were completed on time and exceeded our expectations in
@@ -381,7 +388,8 @@
                         <div class="item">
                             <div class="quote-item">
                                 <span class="quote-text">
-                                    “We had the pleasure of working with M/S {{ $settings->app_name }} Construction on several key projects. The
+                                    “We had the pleasure of working with M/S {{ $settings->app_name }} Construction on
+                                    several key projects. The
                                     professionalism, attention to detail, and consistent project delivery were impressive.
                                     They ensured that each project was executed in compliance with safety regulations,
                                     quality standards, and timelines. We look forward to collaborating with them on future
@@ -400,7 +408,8 @@
                         <div class="item">
                             <div class="quote-item">
                                 <span class="quote-text">
-                                    “{{ $settings->app_name }} Construction has delivered exceptional service on our project from start to finish.
+                                    “{{ $settings->app_name }} Construction has delivered exceptional service on our
+                                    project from start to finish.
                                     Their ability to handle complex tasks and deliver within budget has been remarkable.
                                     We’ve been extremely pleased with their communication, as well as their commitment to
                                     quality work. We highly recommend them for any construction-related needs.”

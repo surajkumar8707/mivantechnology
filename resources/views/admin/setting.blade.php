@@ -12,8 +12,8 @@
                 @csrf
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="app_name">App Name:</label>
+                        <div class="form-group mb-3">
+                            <label class="mb-1" for="app_name">App Name:</label>
                             <input type="text" name="app_name" class="form-control" placeholder="Enter App Name"
                                 value="{{ old('app_name', $setting->app_name ?? '') }}" />
                             @error('app_name')
@@ -21,8 +21,8 @@
                             @enderror
                         </div>
 
-                        <div class="form-group">
-                            <label for="email">Email:</label>
+                        <div class="form-group mb-3">
+                            <label class="mb-1" for="email">Email <small class="text-danger"><b>(Multiple email addresses separated by commas)</b></small>:</label>
                             <input type="text" name="email" class="form-control" placeholder="Enter Email"
                                 value="{{ old('email', $setting->email ?? '') }}" />
                             @error('email')
@@ -30,8 +30,8 @@
                             @enderror
                         </div>
 
-                        <div class="form-group">
-                            <label for="whatsapp">WhatsApp:</label>
+                        <div class="form-group mb-3">
+                            <label class="mb-1" for="whatsapp">WhatsApp:</label>
                             <input type="text" name="whatsapp" class="form-control"
                                 placeholder="Enter WhatsApp Number" value="{{ old('whatsapp', $setting->whatsapp ?? '') }}" />
                             @error('whatsapp')
@@ -39,8 +39,8 @@
                             @enderror
                         </div>
 
-                        <div class="form-group">
-                            <label for="contact">Contact:</label>
+                        <div class="form-group mb-3">
+                            <label class="mb-1" for="contact">Contact:</label>
                             <input type="text" name="contact" class="form-control" placeholder="Enter Contact Number"
                                 value="{{ old('contact', $setting->contact ?? '') }}" />
                             @error('contact')
@@ -51,8 +51,8 @@
                         <button type="submit" class="btn btn-primary my-2">Save</button>
                     </div>
                     <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="header_image">Header Image:</label>
+                        <div class="form-group mb-3">
+                            <label class="mb-1" for="header_image">Header Image:</label>
                             <input type="file" accept="image/*" name="header_image" class="form-control" placeholder="Choose Header Image" />
                             @error('header_image')
                             <span class="text-danger">{{ $message }}</span>
