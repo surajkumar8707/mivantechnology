@@ -23,20 +23,30 @@
                         </button>
 
                         <div id="navbar-collapse" class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav ml-4 align-items-center">
+                            <ul class="nav navbar-nav align-items-center">
 
-                                <li class="nav-item"><a class="nav-link" href="{{ route('front.home') }}">Home</a></li>
-
-                                <li class="nav-item"><a class="nav-link" href="{{ route('front.about') }}">About Us</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('front.home') }}">Home</a>
                                 </li>
 
-                                <li class="nav-item"><a class="nav-link"
-                                        href="{{ route('front.services') }}">Services</a></li>
-
-                                <li class="nav-item"><a class="nav-link" href="{{ route('front.gallery') }}">Gallery</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('front.about') }}">About Us</a>
                                 </li>
 
-                                <li class="nav-item"><a class="nav-link" href="{{ route('front.contact') }}">Contact</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('front.vision') }}">Vision</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('front.services') }}">Services</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('front.gallery') }}">Gallery</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('front.contact') }}">Contact</a>
                                 </li>
 
                                 <li class="header-get-a-quote">
