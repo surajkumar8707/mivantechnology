@@ -28,8 +28,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 about-box text-center">
-                    <img loading="{{ $settings->app_name }}" class="img-fluid w-25"
-                        src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-68e0-622f-ac96-c81a2cfc6eb1/raw?se=2025-04-13T21%3A03%3A03Z&sp=r&sv=2024-08-04&sr=b&scid=967512c5-8a1a-57ba-9efd-b4dc78dd6cf7&skoid=a3336399-497e-45e5-8f28-4b88ecca3d1f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-13T11%3A31%3A37Z&ske=2025-04-14T11%3A31%3A37Z&sks=b&skv=2024-08-04&sig=yc4wo%2BLrZacLMEmg%2BuzgQAHedU/Dk7UTtydxiRWouFo%3D">
+                    <img loading="{{ $settings->app_name }}" class="img-fluid w-50"
+                        src="{{ public_asset('assets/front/images/vision.jpg') }}">
                 </div>
                 <div class="col-lg-12 about-para">
                     <p>Construction Mivan Technology LLP, we specialize in delivering high-quality commercial and
