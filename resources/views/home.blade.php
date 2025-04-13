@@ -248,7 +248,7 @@
                 <div class="col-lg-5 about-section">
                     <h3 class="column-title">A COMPANY YOU CAN<br> TRUST TO BE WITH YOU<br> AT EVERY STEP</h3>
 
-                    <p>The {{ $settings->app_name }} company is a top general contractor. However, what makes us different
+                    <p>The {{ $settings->app_name }} company is a top it's not a general contractor special high-rise and special for mivan high-rise building contractors. However, what makes us different
                         from our competitors is our commitment to safety, operational excellence, and an exceptional
                         client experience. We work collaboratively with you to reach your objectives. By hiring the
                         industry's best, we build the highest-performing teams; we are adept at working with design
@@ -280,13 +280,10 @@
                         REPUTATION TO GET <br>
                         THE JOB DONE RIGHT<br></h3>
 
-                    <p>We are a construction company located in Vashi, Navi Mumbai, delivering construction
-                        solutions since 2019. We provide our customers with quality buildings that are constructed
-                        with great craftsmanship. We employ over 100 qualified and experienced employees, many of
-                        whom have worked together for more than Twenty five years.
-                    </p>
-                    <div class="plan-action">
-                        <a href="{{ route('front.about') }}" class="btn btn-primary float-left">EXPLORE MORE...</a>
+                    <p>Construction Mivan Technology LLP is a leading construction company based in Sivan Bihar, delivering high-quality construction solutions since 2025. With a strong foundation in innovation and reliability, we specialize in building structures that reflect excellence, efficiency, and long-term durability.</p>
+                    <p>At Construction Mivan Technology LLP, we take pride in crafting buildings with exceptional attention to detail and superior craftsmanship. Our team consists of over 100 qualified and experienced professionals, many of whom have worked together for more than twenty-five years, bringing unmatched synergy, skill, and dedication to every project we undertake.</p>
+                    <div class="plan-action mb-2">
+                        <a href="{{ route('front.about') }}" class="btn btn-primary float-left mb-2">EXPLORE MORE...</a>
                     </div>
                 </div><!-- Col end -->
 
