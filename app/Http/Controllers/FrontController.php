@@ -100,6 +100,11 @@ class FrontController extends Controller
         return view('services');
     }
 
+    public function vision()
+    {
+        return view('vision');
+    }
+
     public function contactUs()
     {
         return view('contact');
