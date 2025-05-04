@@ -90,7 +90,7 @@
             </div>
             <!--/ Title row end -->
 
-            <div class="text-center">
+            {{-- <div class="text-center">
                 <div class="ts-team-wrapper">
                     <div class="team-img-wrapper">
                         <img width="35%" loading="lazy" src="{{ public_asset('assets/front/images/amit_kumar.jpg') }}" class="img-fluid about-director-img"
@@ -98,20 +98,18 @@
                     </div>
                     <div class="ts-team-content-classic">
                         <h3 class="ts-name">Mr. Amit Kumar</h3>
-                        <!-- <p class="ts-designation">Chief Operating Officer</p> -->
-
                     </div>
                 </div>
-            </div>
-            {{-- <div class="row justify-content-center">
+            </div> --}}
+            <div class="row justify-content-center">
                 <div class="col-lg-3 col-sm-6 mb-5">
                     <div class="ts-team-wrapper">
                         <div class="team-img-wrapper">
-                            <img loading="lazy" src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-851.jpg" class="img-fluid about-director-img"
+                            <img loading="lazy" src="{{ public_asset('assets/front/images/amit_kumar.jpg') }}" class="img-fluid about-director-img"
                                 alt="team-img">
                         </div>
                         <div class="ts-team-content-classic">
-                            <h3 class="ts-name">Mr. Anand Kumar Sinha</h3>
+                            <h3 class="ts-name">Mr. Amit Kumar</h3>
                             <!-- <p class="ts-designation">Chief Operating Officer</p> -->
 
                         </div>
@@ -123,19 +121,18 @@
                 <div class="col-lg-3 col-sm-6 mb-5">
                     <div class="ts-team-wrapper">
                         <div class="team-img-wrapper">
-                            <img loading="lazy" src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-851.jpg"
+                            <img loading="lazy" src="{{ public_asset('assets/front/images/sanjay_kumar_tripathi.jpg') }}"
                                 class="img-fluid about-director-img" alt="team-img">
                         </div>
                         <div class="ts-team-content-classic">
-                            <h3 class="ts-name">Mr. Shabib Haris Sayyed</h3>
-                            <!-- <p class="ts-designation">Chief Operating Officer</p> -->
+                            <h3 class="ts-name">Mr. Sanjay Kumar Tripathi</h3>
 
                         </div>
                     </div>
                     <!--/ Team wrapper 2 end -->
                 </div><!-- Col end -->
 
-            </div><!-- Content row 1 end --> --}}
+            </div><!-- Content row 1 end -->
 
 
         </div><!-- Container end -->

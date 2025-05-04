@@ -160,7 +160,7 @@
                         <div class="col-lg-3 col-md-4 footer-widget mt-5 mt-md-0">
                             <h3 class="widget-title">Call Us</h3>
                             <div class="working-hours">
-                                +91-{{ $settings->contact }}<br>
+                                <a href="tel:{{ $settings->contact }}">+91 - {{ $settings->contact }}</a> <br>
                             </div>
                         </div><!-- Col end -->
 
