@@ -67,15 +67,8 @@
                     <div class="col-lg-2"></div>
                     <div class="col-lg-4 single-service-info" data-aos="fade-right">
                         <h1>Commercial / Residential</h1>
-                        <p>Construction Mivan Technology LLP, we specialize in delivering high-quality commercial and
-                            residential projects using advanced Mivan shuttering technology. Our focus is on creating
-                            robust, aesthetically appealing, and future-ready spaces that meet the growing demands of urban
-                            infrastructure and modern living.</p>
-
-                        <p>For residential projects, we offer fast-paced construction of apartments, villas, and high-rise
-                            towers with superior finish and durability. Mivan technology allows us to deliver seamless
-                            monolithic concrete structures, which ensures uniform strength, crack-free surfaces, and faster
-                            project completion.</p>
+                        <p>Construction Mivan Technology LLP, we specialize in delivering high-quality commercial and residential projects using advanced Mivan shuttering technology. Our focus is on creating robust, aesthetically appealing, and future-ready spaces that meet the growing demands of urban infrastructure and modern living.</p>
+                        <p>For residential projects, we offer fast-paced construction of apartments, villas, and high-rise towers with superior finish and durability. Mivan technology allows us to deliver seamless monolithic concrete structures, which ensures uniform strength, crack-free surfaces, and faster project completion. Whether it's affordable housing or premium developments, we deliver homes that are safe, sustainable, and built to last.</p>
                     </div>
                     <div class="col-lg-6 single-service-image1" data-aos="fade-left">
                     </div>
@@ -84,15 +77,9 @@
                     <div class="col-lg-2"></div>
                     <div class="col-lg-4 single-service-info" data-aos="fade-right">
                         <h1>Industrial</h1>
-                        <p>Construction Mivan Technology LLP, we specialize in delivering high-quality commercial and
-                            residential projects using advanced Mivan shuttering technology. Our focus is on creating
-                            robust, aesthetically appealing, and future-ready spaces that meet the growing demands of urban
-                            infrastructure and modern living.</p>
+                        <p>Technology LLP is a trusted name in the execution of high-quality industrial construction projects, delivering robust, efficient, and future-ready infrastructure for manufacturing, logistics, and warehousing sectors. With the use of advanced Mivan shuttering technology, we bring speed, strength, and precision to industrial development like never before.</p>
 
-                        <p>For residential projects, we offer fast-paced construction of apartments, villas, and high-rise
-                            towers with superior finish and durability. Mivan technology allows us to deliver seamless
-                            monolithic concrete structures, which ensures uniform strength, crack-free surfaces, and faster
-                            project completion.</p>
+                        <p>Our expertise lies in building industrial facilities such as factories, processing plants, assembly units, storage facilities, and industrial parks with a focus on rapid execution and long-term performance. Mivan technology allows us to construct monolithic concrete structures that are not only durable but also resistant to heavy loads, vibrations, and environmental stress—key requirements in any industrial environment.</p>
                     </div>
                     <div class="col-lg-6 single-service-image2" data-aos="fade-left">
                     </div>
@@ -101,16 +88,10 @@
                 <div class="row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-4 single-service-info" data-aos="fade-right">
-                        <h1>Infrastructure</h1>
-                        <p>Construction Mivan Technology LLP, we specialize in delivering high-quality commercial and
-                            residential projects using advanced Mivan shuttering technology. Our focus is on creating
-                            robust, aesthetically appealing, and future-ready spaces that meet the growing demands of urban
-                            infrastructure and modern living.</p>
+                        <h1>Tensioning</h1>
+                        <p>Construction Mivan Technology LLP is committed to contributing to the nation’s progress through the development of world-class infrastructure projects. By leveraging cutting-edge Mivan construction technology, we deliver faster, stronger, and more reliable infrastructure solutions that meet the growing demands of modern urban and rural development.</p>
 
-                        <p>For residential projects, we offer fast-paced construction of apartments, villas, and high-rise
-                            towers with superior finish and durability. Mivan technology allows us to deliver seamless
-                            monolithic concrete structures, which ensures uniform strength, crack-free surfaces, and faster
-                            project completion.</p>
+                        <p>Our expertise spans across a wide range of infrastructure segments, including roads and highways, bridges, flyovers, urban transport systems, drainage networks, water treatment plants, and public utility buildings. Mivan technology, with its monolithic concrete structure and aluminum formwork system, allows us to deliver projects with superior strength, speed, and precision. This ensures reduced construction time, lower labor dependency, and enhanced durability—making it an ideal choice for large-scale infrastructure works.</p>
 
                     </div>
                     <div class="col-lg-6 single-service-image3" data-aos="fade-left">
@@ -121,15 +102,9 @@
                     <div class="col-lg-2"></div>
                     <div class="col-lg-4 single-service-info" data-aos="fade-right">
                         <h1>River front</h1>
-                        <p>Construction Mivan Technology LLP, we specialize in delivering high-quality commercial and
-                            residential projects using advanced Mivan shuttering technology. Our focus is on creating
-                            robust, aesthetically appealing, and future-ready spaces that meet the growing demands of urban
-                            infrastructure and modern living.</p>
+                        <p>At Construction Mivan Technology LLP, we take pride in being a part of transformative riverfront development projects that enhance urban aesthetics, environmental sustainability, and public engagement. Utilizing modern Mivan construction technology, we offer innovative and efficient solutions for building resilient and visually appealing riverfront infrastructures.</p>
 
-                        <p>For residential projects, we offer fast-paced construction of apartments, villas, and high-rise
-                            towers with superior finish and durability. Mivan technology allows us to deliver seamless
-                            monolithic concrete structures, which ensures uniform strength, crack-free surfaces, and faster
-                            project completion.</p>
+                        <p>Riverfront development is more than just beautification—it is about reviving natural assets, preventing erosion, managing flood risks, and creating vibrant public spaces. With our expertise, we construct retaining walls, promenades, walkways, ghats, parks, seating areas, and utility infrastructure that blend functionality with architectural elegance. Mivan technology allows us to build strong, monolithic structures with high precision and speed, ensuring timely project completion even in challenging site conditions.</p>
 
                     </div>
                     <div class="col-lg-6 single-service-image4" data-aos="fade-left">

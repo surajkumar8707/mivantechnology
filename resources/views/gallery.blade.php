@@ -15,16 +15,16 @@
                           </nav> -->
                             <h1 class="banner-title">Our Gallery</h1>
                         </div>
-                    </div><!-- Col end -->
-                </div><!-- Row end -->
-            </div><!-- Container end -->
-        </div><!-- Banner text end -->
-    </div><!-- Banner area end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <section id="project-area" class="project-area solid-bg single-service-gap">
         <div class="container">
-            <h1 class="text-center">Mivans</h1>
+            <h1 class="text-center">Mivan Technology</h1>
             <div class="row">
                 @foreach ($mivans as $gallery)
                     <div class="col-md-4 col-xs-6 thumb">

@@ -37,7 +37,6 @@
             <div class="container">
                 <div class="box-slider-content">
                     <div class="box-slider-text">
-                        <!-- <h2 class="box-slide-title">17 Years Of Excellence In</h2> -->
                         <div>
                             @if (isset($settings->header_image) and !empty($settings->header_image))
                                 <img class="w-50" loading="{{ $settings->app_name }}" src="{{ public_asset($settings->header_image) }}"
@@ -48,11 +47,6 @@
                             TRUST TO BE WITH<br>
                             YOU AT EVERY STEP
                         </h1>
-                        <!-- <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
-                                             thinking team looking for talent like.</p> -->
-                        <!-- <p>
-                                             <a href="services.html" class="slider btn btn-primary">Our Service</a>
-                                           </p> -->
                     </div>
                 </div>
             </div>
@@ -62,15 +56,20 @@
             style="background-image:url(https://sraconstruction.in/images/slider-main/Slider4.jpg)">
             <div class="slider-content text-left">
                 <div class="container">
-                    <!-- <div class="box-slider-content">
-                                            <div class="box-slider-text">
-                                              <h2 class="box-slide-title">When Services Matters</h2>
-                                              <h3 class="box-slide-sub-title">Your Choice is Simple</h3>
-                                              <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
-                                                  thinking team looking for talent like.</p>
-                                              <p><a href="about.html" class="slider btn btn-primary" aria-label="about-us">Know Us</a></p>
-                                            </div>
-                                        </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="banner-carousel-item"
+            style="background-image:url(https://www.lighthouseriskservices.com/wp-content/uploads/2023/02/pexels-akin-victor-10202865.jpg)">
+            <div class="slider-content text-left">
+                <div class="container">
+                </div>
+            </div>
+        </div>
+        <div class="banner-carousel-item"
+            style="background-image:url(https://plus.unsplash.com/premium_photo-1682724602925-f0264b85953f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVpbGRpbmclMjBjb25zdHJ1Y3Rpb258ZW58MHx8MHx8fDA%3D)">
+            <div class="slider-content text-left">
+                <div class="container">
                 </div>
             </div>
         </div>
