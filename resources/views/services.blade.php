@@ -9,28 +9,28 @@
         }
 
         .single-service-image1 {
-            background: url(https://media.istockphoto.com/id/488120139/photo/modern-real-estate.jpg?s=612x612&w=0&k=20&c=88jk1VLSoYboMmLUx173sHs_XrZ9pH21as8lC7WINQs=);
+            background: url({{ public_asset('assets/front/images/service_river_front_constructor.jpg') }});
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
         }
 
         .single-service-image2 {
-            background: url(https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?cs=srgb&dl=pexels-pixabay-247763.jpg&fm=jpg);
+            background: url({{ public_asset('assets/front/images/service_industrial.jpg') }});
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
         }
 
         .single-service-image3 {
-            background: url(https://www.letsbuild.com/wp-content/uploads/2023/07/types-of-infrastructure.jpeg);
+            background: url({{ public_asset('assets/front/images/tensioning_or_cantilever.jpg') }});
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
         }
 
         .single-service-image4 {
-            background: url(https://sceneloc8.com/wp-content/uploads/2024/03/4-64.png);
+            background: url({{ public_asset('assets/front/images/service_river_front_constructor.jpg') }});
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
