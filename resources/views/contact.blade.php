@@ -68,7 +68,7 @@
                                                 </span> -->
                         <div class="ts-service-box-content">
                             <h4>Call Us</h4>
-                            <p>{{ $settings->contact }}</p>
+                            <p>+91 - {{ $settings->contact }}</p>
                         </div>
                     </div>
                     {{-- <div>
