@@ -39,8 +39,8 @@
                     <div class="box-slider-text">
                         <div>
                             @if (isset($settings->header_image) and !empty($settings->header_image))
-                                <img class="w-50" loading="{{ $settings->app_name }}" src="{{ public_asset($settings->header_image) }}"
-                                    alt="{{ $settings->app_name }}">
+                                <img class="w-50" loading="{{ $settings->app_name }}"
+                                    src="{{ public_asset($settings->header_image) }}" alt="{{ $settings->app_name }}">
                             @endif
                         </div>
                         <h1 class="box-slide-sub-title">A COMPANY YOU CAN<br>
@@ -247,7 +247,8 @@
                 <div class="col-lg-5 about-section">
                     <h3 class="column-title">A COMPANY YOU CAN<br> TRUST TO BE WITH YOU<br> AT EVERY STEP</h3>
 
-                    <p>The {{ $settings->app_name }} company is a top it's not a general contractor special high-rise and special for mivan high-rise building contractors. However, what makes us different
+                    <p>The {{ $settings->app_name }} company is a top it's not a general contractor special high-rise and
+                        special for mivan high-rise building contractors. However, what makes us different
                         from our competitors is our commitment to safety, operational excellence, and an exceptional
                         client experience. We work collaboratively with you to reach your objectives. By hiring the
                         industry's best, we build the highest-performing teams; we are adept at working with design
@@ -279,8 +280,14 @@
                         REPUTATION TO GET <br>
                         THE JOB DONE RIGHT<br></h3>
 
-                    <p>Construction Mivan Technology LLP is a leading construction company based in Sivan Bihar, delivering high-quality construction solutions since 2025. With a strong foundation in innovation and reliability, we specialize in building structures that reflect excellence, efficiency, and long-term durability.</p>
-                    <p>At Construction Mivan Technology LLP, we take pride in crafting buildings with exceptional attention to detail and superior craftsmanship. Our team consists of over 100 qualified and experienced professionals, many of whom have worked together for more than twenty-five years, bringing unmatched synergy, skill, and dedication to every project we undertake.</p>
+                    <p>Construction Mivan Technology LLP is a leading construction company based in Sivan Bihar, delivering
+                        high-quality construction solutions since 2025. With a strong foundation in innovation and
+                        reliability, we specialize in building structures that reflect excellence, efficiency, and long-term
+                        durability.</p>
+                    <p>At Construction Mivan Technology LLP, we take pride in crafting buildings with exceptional attention
+                        to detail and superior craftsmanship. Our team consists of over 100 qualified and experienced
+                        professionals, many of whom have worked together for more than twenty-five years, bringing unmatched
+                        synergy, skill, and dedication to every project we undertake.</p>
                     <div class="plan-action mb-2">
                         <a href="{{ route('front.about') }}" class="btn btn-primary float-left mb-2">EXPLORE MORE...</a>
                     </div>
@@ -352,7 +359,7 @@
         </div>
     </section><!-- Content end --> --}}
 
-    <section class="content testimonial-area-bg">
+    {{-- <section class="content testimonial-area-bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -415,6 +422,80 @@
                                     <div class="quote-item-info">
                                         <h3 class="quote-author">Mr. Vikram Soni (Managing Director)</h3>
                                         <span class="quote-subtext">M/S Techbuild Solutions</span>
+                                    </div>
+                                </div>
+                            </div><!-- Quote item end -->
+                        </div>
+
+                    </div>
+                </div><!-- Col end -->
+            </div>
+        </div>
+    </section> --}}
+
+    <section class="content testimonial-area-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="column-title text-center color-white">CLIENT FEEDBACK</h3>
+
+                    <div id="testimonial-slide" class="testimonial-slide">
+
+                        <div class="item">
+                            <div class="quote-item">
+                                <span class="quote-text">
+                                    “We are highly satisfied with the quality of work delivered by M/S
+                                    {{ $settings->app_name }} Construction.
+                                    Their team demonstrated excellent professionalism throughout the execution of our
+                                    projects, from the design phase to completion. The steel structure of the bridge and the
+                                    construction of our bungalow were completed on time and exceeded our expectations in
+                                    terms of craftsmanship and attention to detail. We highly recommend their services for
+                                    future projects.”
+                                </span>
+
+                                <div class="quote-item-footer">
+                                    <div class="quote-item-info">
+                                        <h3 class="quote-author">Mr. David Miller</h3>
+                                        <span class="quote-subtext">M/S. Apex Engineering</span>
+                                    </div>
+                                </div>
+                            </div><!-- Quote item end -->
+                        </div>
+
+                        <div class="item">
+                            <div class="quote-item">
+                                <span class="quote-text">
+                                    “We had the pleasure of working with M/S {{ $settings->app_name }} Construction on
+                                    several key projects. The
+                                    professionalism, attention to detail, and consistent project delivery were impressive.
+                                    They ensured that each project was executed in compliance with safety regulations,
+                                    quality standards, and timelines. We look forward to collaborating with them on future
+                                    developments.”
+                                </span>
+
+                                <div class="quote-item-footer">
+                                    <div class="quote-item-info">
+                                        <h3 class="quote-author">Mr. John Edwards</h3>
+                                        <span class="quote-subtext">M/S BuildTech Ltd.</span>
+                                    </div>
+                                </div>
+                            </div><!-- Quote item end -->
+                        </div>
+
+                        <div class="item">
+                            <div class="quote-item">
+                                <span class="quote-text">
+                                    “{{ $settings->app_name }} Construction has delivered exceptional service on our
+                                    project from start to finish.
+                                    Their ability to handle complex tasks and deliver within budget has been remarkable.
+                                    We’ve been extremely pleased with their communication, as well as their commitment to
+                                    quality work. We highly recommend them for any construction-related needs.”
+                                </span>
+
+                                <div class="quote-item-footer">
+                                    <div class="quote-item-info">
+                                        <h3 class="quote-author">Mr. Samuel Green</h3>
+                                        <span class="quote-subtext">M/S Greenfield Construction</span>
                                     </div>
                                 </div>
                             </div><!-- Quote item end -->
