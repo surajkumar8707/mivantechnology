@@ -9,7 +9,7 @@
         }
 
         .single-service-image1 {
-            background: url({{ public_asset('assets/front/images/service_river_front_constructor.jpg') }});
+            background: url({{ public_asset('assets/front/images/service_commercial_residential.jpg') }});
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
@@ -69,6 +69,8 @@
                         <h1>Commercial / Residential</h1>
                         <p>Construction Mivan Technology LLP, we specialize in delivering high-quality commercial and residential projects using advanced Mivan shuttering technology. Our focus is on creating robust, aesthetically appealing, and future-ready spaces that meet the growing demands of urban infrastructure and modern living.</p>
                         <p>For residential projects, we offer fast-paced construction of apartments, villas, and high-rise towers with superior finish and durability. Mivan technology allows us to deliver seamless monolithic concrete structures, which ensures uniform strength, crack-free surfaces, and faster project completion. Whether it's affordable housing or premium developments, we deliver homes that are safe, sustainable, and built to last.</p>
+                        <p>In the commercial sector, we construct office complexes, business parks, retail centers, and mixed-use developments with a focus on structural integrity and space efficiency. The flexibility of Mivan technology allows us to accommodate complex layouts and architectural designs while maintaining rapid construction speed. Our commercial spaces are engineered for longevity, with minimal maintenance and maximum utility.</p>
+                        <p>Each project is executed with strict adherence to quality standards, safety protocols, and eco-friendly practices. Our experienced team ensures timely delivery without compromising on construction excellence. By integrating advanced engineering solutions, we help clients reduce costs, optimize space, and achieve long-term value.</p>
                     </div>
                     <div class="col-lg-6 single-service-image1" data-aos="fade-left">
                     </div>
@@ -88,7 +90,7 @@
                 <div class="row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-4 single-service-info" data-aos="fade-right">
-                        <h1>Tensioning</h1>
+                        <h1>Post Tensioning or Cantilever</h1>
                         <p>Construction Mivan Technology LLP is committed to contributing to the nation’s progress through the development of world-class infrastructure projects. By leveraging cutting-edge Mivan construction technology, we deliver faster, stronger, and more reliable infrastructure solutions that meet the growing demands of modern urban and rural development.</p>
 
                         <p>Our expertise spans across a wide range of infrastructure segments, including roads and highways, bridges, flyovers, urban transport systems, drainage networks, water treatment plants, and public utility buildings. Mivan technology, with its monolithic concrete structure and aluminum formwork system, allows us to deliver projects with superior strength, speed, and precision. This ensures reduced construction time, lower labor dependency, and enhanced durability—making it an ideal choice for large-scale infrastructure works.</p>

@@ -455,8 +455,8 @@
 
                                 <div class="quote-item-footer">
                                     <div class="quote-item-info">
-                                        <h3 class="quote-author">Mr. David Miller</h3>
-                                        <span class="quote-subtext">M/S. Apex Engineering</span>
+                                        <h3 class="quote-author">Dr.Deepak Gupta</h3>
+                                        {{-- <span class="quote-subtext">M/S. Apex Engineering</span> --}}
                                     </div>
                                 </div>
                             </div><!-- Quote item end -->
@@ -475,8 +475,8 @@
 
                                 <div class="quote-item-footer">
                                     <div class="quote-item-info">
-                                        <h3 class="quote-author">Mr. John Edwards</h3>
-                                        <span class="quote-subtext">M/S BuildTech Ltd.</span>
+                                        <h3 class="quote-author">Mohit Tiwari</h3>
+                                        {{-- <span class="quote-subtext">M/S BuildTech Ltd.</span> --}}
                                     </div>
                                 </div>
                             </div><!-- Quote item end -->
@@ -494,8 +494,8 @@
 
                                 <div class="quote-item-footer">
                                     <div class="quote-item-info">
-                                        <h3 class="quote-author">Mr. Samuel Green</h3>
-                                        <span class="quote-subtext">M/S Greenfield Construction</span>
+                                        <h3 class="quote-author">Ankit Singh</h3>
+                                        {{-- <span class="quote-subtext">M/S Greenfield Construction</span> --}}
                                     </div>
                                 </div>
                             </div><!-- Quote item end -->
