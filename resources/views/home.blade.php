@@ -30,6 +30,12 @@
             right: -82px;
             padding: 41px;
         }
+
+        .service-4 {
+            background: url("{{ public_asset('assets/front/images/service_river_front_constructor.jpg') }}");
+            background-size: cover;
+            margin-top: 2%;
+        }
     </style>
     <div class="banner-carousel banner-carousel-2 mb-0">
         <div class="banner-carousel-item"
@@ -209,7 +215,7 @@
                     <div class="service-box service-2">
                         <div class="service-overlay text-center">
                             <a href="{{ route('front.services') }}">
-                                <h2>Industrial
+                                <h2>Mivan Technology
                                     <img src="https://sraconstruction.in/images/arrow.png" width="25" alt="">
                                 </h2>
                             </a>
@@ -221,7 +227,7 @@
                     <div class="service-box service-3">
                         <div class="service-overlay text-center">
                             <a href="{{ route('front.services') }}">
-                                <h2>Infrastructure
+                                <h2>Post tensioning
                                     <img src="https://sraconstruction.in/images/arrow.png" width="25" alt="">
                                 </h2>
                             </a>

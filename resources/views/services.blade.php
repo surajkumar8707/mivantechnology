@@ -23,7 +23,7 @@
         }
 
         .single-service-image3 {
-            background: url({{ public_asset('assets/front/images/tensioning_or_cantilever.jpg') }});
+            background: url({{ public_asset('assets/front/images/post_tensioning_or_cantilever.jpg') }});
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
@@ -66,11 +66,11 @@
                 <div class="row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-4 single-service-info" data-aos="fade-right">
-                        <h1>Commercial / Residential</h1>
-                        <p>Construction Mivan Technology LLP, we specialize in delivering high-quality commercial and residential projects using advanced Mivan shuttering technology. Our focus is on creating robust, aesthetically appealing, and future-ready spaces that meet the growing demands of urban infrastructure and modern living.</p>
-                        <p>For residential projects, we offer fast-paced construction of apartments, villas, and high-rise towers with superior finish and durability. Mivan technology allows us to deliver seamless monolithic concrete structures, which ensures uniform strength, crack-free surfaces, and faster project completion. Whether it's affordable housing or premium developments, we deliver homes that are safe, sustainable, and built to last.</p>
-                        <p>In the commercial sector, we construct office complexes, business parks, retail centers, and mixed-use developments with a focus on structural integrity and space efficiency. The flexibility of Mivan technology allows us to accommodate complex layouts and architectural designs while maintaining rapid construction speed. Our commercial spaces are engineered for longevity, with minimal maintenance and maximum utility.</p>
-                        <p>Each project is executed with strict adherence to quality standards, safety protocols, and eco-friendly practices. Our experienced team ensures timely delivery without compromising on construction excellence. By integrating advanced engineering solutions, we help clients reduce costs, optimize space, and achieve long-term value.</p>
+                        <h1>Residential and Commercial Construction</h1>
+                        <p>Mivan technology is a modern construction technique that uses aluminum formwork for fast, durable, and cost-effective building. Originally developed in Europe, it is widely used in India for both residential and commercial projects due to its speed, efficiency, and ability to deliver high-quality, uniform structures.</p>
+                        <p>In residential construction, Mivan technology is ideal for high-rise apartments, affordable housing, and mass housing projects. The aluminum formwork allows for monolithic concrete pouring, resulting in smooth, crack-free walls with high structural strength. It reduces construction time significantly, which is essential in fast-growing urban areas.</p>
+                        <p>For commercial buildings, Mivan technology offers benefits such as faster project turnaround, consistent finishes, and reduced labor costs. It also enhances structural stability and safety, making it suitable for office buildings, malls, and institutional projects. The formwork can be reused multiple times (up to 200–300 repetitions), making it economical in large-scale developments.</p>
+                        <p>Would you like this in a presentation or visual format as well?</p>
                     </div>
                     <div class="col-lg-6 single-service-image1" data-aos="fade-left">
                     </div>
@@ -78,10 +78,11 @@
                 <div class="row single-service-gap">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-4 single-service-info" data-aos="fade-right">
-                        <h1>Industrial</h1>
-                        <p>Technology LLP is a trusted name in the execution of high-quality industrial construction projects, delivering robust, efficient, and future-ready infrastructure for manufacturing, logistics, and warehousing sectors. With the use of advanced Mivan shuttering technology, we bring speed, strength, and precision to industrial development like never before.</p>
-
-                        <p>Our expertise lies in building industrial facilities such as factories, processing plants, assembly units, storage facilities, and industrial parks with a focus on rapid execution and long-term performance. Mivan technology allows us to construct monolithic concrete structures that are not only durable but also resistant to heavy loads, vibrations, and environmental stress—key requirements in any industrial environment.</p>
+                        <h1>Mivan technology</h1>
+                        <p>Mivan technology is a modern construction method that uses aluminum formwork to build concrete structures quickly and efficiently. It involves casting walls, floors, and slabs in one continuous pour, creating a monolithic structure with high strength and durability. Originally developed in Europe, Mivan is widely used in India for mass housing and high-rise projects.</p>
+                        <p>This technique offers fast construction, smooth finishes, and uniform quality. The aluminum formwork is lightweight, reusable up to 200–300 times, and requires minimal skilled labor. It reduces construction time, labor costs, and material waste, making it both economical and sustainable.</p>
+                        <p>
+                            Mivan technology is ideal for residential apartments, commercial buildings, and large-scale developments. It ensures structural stability, earthquake resistance, and long-lasting performance, making it a preferred choice in modern urban construction.</p>
                     </div>
                     <div class="col-lg-6 single-service-image2" data-aos="fade-left">
                     </div>
@@ -90,11 +91,11 @@
                 <div class="row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-4 single-service-info" data-aos="fade-right">
-                        <h1>Post Tensioning or Cantilever</h1>
-                        <p>Construction Mivan Technology LLP is committed to contributing to the nation’s progress through the development of world-class infrastructure projects. By leveraging cutting-edge Mivan construction technology, we deliver faster, stronger, and more reliable infrastructure solutions that meet the growing demands of modern urban and rural development.</p>
-
-                        <p>Our expertise spans across a wide range of infrastructure segments, including roads and highways, bridges, flyovers, urban transport systems, drainage networks, water treatment plants, and public utility buildings. Mivan technology, with its monolithic concrete structure and aluminum formwork system, allows us to deliver projects with superior strength, speed, and precision. This ensures reduced construction time, lower labor dependency, and enhanced durability—making it an ideal choice for large-scale infrastructure works.</p>
-
+                        <h1>Post Tensioning or cantilever</h1>
+                        <p>Post-tensioning is a structural reinforcement method where steel tendons are tensioned after concrete is poured and set. When combined with Mivan technology—a fast, efficient aluminum formwork system—it creates a powerful construction solution for high-rise buildings and large-scale projects.</p>
+                        <p>Mivan technology enables the quick casting of monolithic concrete walls and slabs with high precision and uniformity. By integrating post-tensioning, builders can reduce slab thickness, increase span lengths, and minimize the number of columns. This results in open, flexible interior spaces and enhanced structural performance.</p>
+                        <p>The combination reduces construction time, material usage, and labor costs while increasing durability and resistance to cracking. Post-tensioned Mivan structures are ideal for both residential and commercial buildings due to their strength, speed, and quality. This modern method supports sustainable construction practices and meets the demands of rapid urban development.</p>
+                        <p>Would you like a version of this formatted for a brochure or infographic?</p>
                     </div>
                     <div class="col-lg-6 single-service-image3" data-aos="fade-left">
                     </div>
