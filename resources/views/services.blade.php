@@ -101,20 +101,6 @@
                     </div>
                 </div>
 
-                <div class="row single-service-gap">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-4 single-service-info" data-aos="fade-right">
-                        <h1>River front</h1>
-                        <p>At Construction Mivan Technology LLP, we take pride in being a part of transformative riverfront development projects that enhance urban aesthetics, environmental sustainability, and public engagement. Utilizing modern Mivan construction technology, we offer innovative and efficient solutions for building resilient and visually appealing riverfront infrastructures.</p>
-
-                        <p>Riverfront development is more than just beautification—it is about reviving natural assets, preventing erosion, managing flood risks, and creating vibrant public spaces. With our expertise, we construct retaining walls, promenades, walkways, ghats, parks, seating areas, and utility infrastructure that blend functionality with architectural elegance. Mivan technology allows us to build strong, monolithic structures with high precision and speed, ensuring timely project completion even in challenging site conditions.</p>
-
-                    </div>
-                    <div class="col-lg-6 single-service-image4" data-aos="fade-left">
-                        <!-- <img src="images/services/commercial.jpg"  alt=""> -->
-                    </div>
-                </div>
-
             </div>
         </section>
     </div>

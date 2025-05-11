@@ -36,6 +36,23 @@
             background-size: cover;
             margin-top: 2%;
         }
+
+        .service-1 {
+            background: url("{{ public_asset('assets/front/images/service_commercial_residential.jpg') }}");
+            background-size: cover;
+        }
+
+        .service-2 {
+            background: url("{{ public_asset('assets/front/images/service_industrial.jpg') }}");
+            background-size: cover;
+            margin-top: 2%;
+        }
+
+        .service-3 {
+            background: url("{{ public_asset('assets/front/images/post_tensioning_or_cantilever.jpg') }}");
+            background-size: cover;
+            margin-top: 2%;
+        }
     </style>
     <div class="banner-carousel banner-carousel-2 mb-0">
         <div class="banner-carousel-item"
@@ -203,7 +220,7 @@
                     <div class="service-box service-1">
                         <div class="service-overlay text-center">
                             <a href="{{ route('front.services') }}">
-                                <h2>Commercial/Residential
+                                <h2>Residential and Commercial Construction
                                     <img src="https://sraconstruction.in/images/arrow.png" width="25" alt="">
                                 </h2>
                             </a>
@@ -227,7 +244,7 @@
                     <div class="service-box service-3">
                         <div class="service-overlay text-center">
                             <a href="{{ route('front.services') }}">
-                                <h2>Post tensioning
+                                <h2>Post Tensioning or cantilever
                                     <img src="https://sraconstruction.in/images/arrow.png" width="25" alt="">
                                 </h2>
                             </a>
@@ -236,7 +253,7 @@
                         </div>
                     </div>
 
-                    <div class="service-box service-4">
+                    {{-- <div class="service-box service-4">
                         <div class="service-overlay text-center">
                             <a href="{{ route('front.services') }}">
                                 <h2>River Front Development
@@ -246,7 +263,7 @@
 
 
                         </div>
-                    </div>
+                    </div> --}}
 
                 </div><!-- Col end -->
 
