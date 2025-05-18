@@ -1,7 +1,11 @@
 @extends('layouts.app')
 @section('title', 'Home Page')
 @section('content')
-    <style>
+{{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/> --}}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+<style>
         .subscribe {
             background: url(https://sraconstruction.in/images/connectbg.png);
             background-size: cover;
@@ -53,6 +57,54 @@
             background-size: cover;
             margin-top: 2%;
         }
+         .testimonial-area-bg {
+            padding: 60px 0;
+        }
+
+        .quote-item {
+            background-color: #ffffff00;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .quote-text {
+            display: block;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .quote-author {
+            font-weight: bold;
+        }
+
+        .owl-dots {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .owl-dot {
+            display: inline-block;
+            background: none;
+            border: 1px solid white;
+            color: white;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .owl-dot.active {
+            background-color: white;
+            color: #222;
+        }
+
+        h3.column-title {
+            margin-bottom: 40px;
+        }
     </style>
     <div class="banner-carousel banner-carousel-2 mb-0">
         <div class="banner-carousel-item"
@@ -97,55 +149,6 @@
             </div>
         </div>
     </div>
-    {{-- <div class="banner-carousel banner-carousel-2 mb-0 slick-initialized slick-slider"><button type="button"
-            class="carousel-control left slick-arrow" aria-label="carousel-control" style=""><i
-                class="fas fa-chevron-left"></i></button>
-        <div class="slick-list draggable">
-            <div class="slick-track" style="opacity: 1; width: 3040px;">
-                <div class="banner-carousel-item slick-slide slick-current slick-active"
-                    style="background-image: url(https://sraconstruction.in/images/slider-main/Slider5.jpg); width: 1520px; position: relative; left: 0px; top: 0px; z-index: 1000; opacity: 1; transition: opacity 600ms;"
-                    data-slick-index="0" aria-hidden="false" tabindex="-1">
-                    <div class="container">
-                        <div class="box-slider-content">
-                            <div class="box-slider-text">
-                                <!-- <h2 class="box-slide-title">17 Years Of Excellence In</h2> -->
-                                <h1 class="box-slide-sub-title">A COMPANY YOU CAN<br>
-                                    TRUST TO BE WITH<br>
-                                    YOU AT EVERY STEP
-                                </h1>
-                                <!-- <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
-                   thinking team looking for talent like.</p> -->
-                                <!-- <p>
-                   <a href="services.html" class="slider btn btn-primary">Our Service</a>
-                 </p> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="banner-carousel-item slick-slide"
-                    style="background-image: url(https://sraconstruction.in/images/slider-main/Slider4.jpg); width: 1520px; position: relative; left: -1520px; top: 0px; z-index: 998; opacity: 0; transition: opacity 600ms;"
-                    data-slick-index="1" aria-hidden="true" tabindex="0">
-                    <div class="slider-content text-left">
-                        <div class="container">
-                            <!-- <div class="box-slider-content">
-                  <div class="box-slider-text">
-                    <h2 class="box-slide-title">When Services Matters</h2>
-                    <h3 class="box-slide-sub-title">Your Choice is Simple</h3>
-                    <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward
-                        thinking team looking for talent like.</p>
-                    <p><a href="about.html" class="slider btn btn-primary" aria-label="about-us">Know Us</a></p>
-                  </div>
-              </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <button type="button" class="carousel-control right slick-arrow" aria-label="carousel-control" style=""><i
-                class="fas fa-chevron-right"></i></button>
-    </div> --}}
 
     <section class="call-to-action no-padding">
         <div class="container">
@@ -253,18 +256,6 @@
                         </div>
                     </div>
 
-                    {{-- <div class="service-box service-4">
-                        <div class="service-overlay text-center">
-                            <a href="{{ route('front.services') }}">
-                                <h2>River Front Development
-                                    <img src="https://sraconstruction.in/images/arrow.png" width="25" alt="">
-                                </h2>
-                            </a>
-
-
-                        </div>
-                    </div> --}}
-
                 </div><!-- Col end -->
 
                 <div class="col-lg-5 about-section">
@@ -321,214 +312,68 @@
         </div><!-- Container end -->
     </section><!-- Main container end -->
 
-    {{-- <section class="content testimonial-area-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="column-title text-center color-white">OUR CLIENT'S RESPONSES</h3>
-
-                    <div id="testimonial-slide" class="testimonial-slide">
-
-                        <div class="item">
-                            <div class="quote-item">
-                                <span class="quote-text">
-                                    “It is certified that the works under M/S {{ $settings->app_name }} which include Steel
-                                    structure work of bridge in the premises, civil and allied works of fire-lifts,
-                                    infra-works at ground floor, civil and allied works of Bungalow-58 from plinth
-                                    to LMR including RCC, plaster and waterproofing have been satisfactorily
-                                    completed; that all charges or bills for labour or services performed or
-                                    materials furnished, and other charges against the subcontractors, have been
-                                    paid in full and in accordance with the terms of the contract as per our
-                                    information.
-                                    During the execution period from 2014 to 2022 (till date, 15th January,2022),
-                                    the approach and behaviors of the staffs and owners have been excellent.
-                                    Our best wishes to {{ $settings->app_name }} for future endeavors.”
-                                </span>
-
-                                <div class="quote-item-footer">
-                                    <!-- <img loading="lazy" class="testimonial-thumb" src="https://sraconstruction.in/images/clients/testimonial1.png" alt="testimonial"> -->
-                                    <div class="quote-item-info">
-                                        <h3 class="quote-author">Mr. Narottam Kumar (V.P)</h3>
-                                        <span class="quote-subtext">M/S. T. Bhimjiyani Reality</span>
-                                    </div>
-                                </div>
-                            </div><!-- Quote item end -->
-                        </div>
-
-                        <div class="item">
-                            <div class="quote-item">
-                                <span class="quote-text">
-                                    “This letter serves as our endorsement for M/s {{ $settings->app_name }}s. Since the
-                                    commencement of awarded works in August 2021, the progress, quality control and
-                                    overall project management have been impressive and it has achieved milestones
-                                    as planned. The cordination amongst staffs, higher management and with ourselves
-                                    may be rated very good. M/S {{ $settings->app_name }}s has so far managed all the
-                                    construction activities, site management and other issues prudently.
-                                    We wish all the best for it's future endeavors.”
-                                </span>
-
-                                <div class="quote-item-footer">
-                                    <!-- <img loading="lazy" class="testimonial-thumb" src="https://sraconstruction.in/images/clients/testimonial1.png" alt="testimonial"> -->
-                                    <div class="quote-item-info">
-                                        <h3 class="quote-author">Mr. Pawan Kumar ( Sr. Manager )</h3>
-                                        <span class="quote-subtext">M/S Reliance, Rabale, Navi Mumbai</span>
-                                    </div>
-                                </div>
-                            </div><!-- Quote item end -->
-                        </div>
-                    </div>
-                </div><!-- Col end -->
-            </div>
-        </div>
-    </section><!-- Content end --> --}}
-
-    {{-- <section class="content testimonial-area-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="column-title text-center color-white">CLIENT FEEDBACK</h3>
-
-                    <div id="testimonial-slide" class="testimonial-slide">
-
-                        <div class="item">
-                            <div class="quote-item">
-                                <span class="quote-text">
-                                    “We are highly satisfied with the quality of work delivered by M/S
-                                    {{ $settings->app_name }} Construction.
-                                    Their team demonstrated excellent professionalism throughout the execution of our
-                                    projects, from the design phase to completion. The steel structure of the bridge and the
-                                    construction of our bungalow were completed on time and exceeded our expectations in
-                                    terms of craftsmanship and attention to detail. We highly recommend their services for
-                                    future projects.”
-                                </span>
-
-                                <div class="quote-item-footer">
-                                    <div class="quote-item-info">
-                                        <h3 class="quote-author">Mr. Rahul Singh (Director)</h3>
-                                        <span class="quote-subtext">M/S. Shree Construction Co.</span>
-                                    </div>
-                                </div>
-                            </div><!-- Quote item end -->
-                        </div>
-
-                        <div class="item">
-                            <div class="quote-item">
-                                <span class="quote-text">
-                                    “We had the pleasure of working with M/S {{ $settings->app_name }} Construction on
-                                    several key projects. The
-                                    professionalism, attention to detail, and consistent project delivery were impressive.
-                                    They ensured that each project was executed in compliance with safety regulations,
-                                    quality standards, and timelines. We look forward to collaborating with them on future
-                                    developments.”
-                                </span>
-
-                                <div class="quote-item-footer">
-                                    <div class="quote-item-info">
-                                        <h3 class="quote-author">Mr. Ajeet Sharma (Project Manager)</h3>
-                                        <span class="quote-subtext">M/S Urban Build Pvt. Ltd.</span>
-                                    </div>
-                                </div>
-                            </div><!-- Quote item end -->
-                        </div>
-
-                        <div class="item">
-                            <div class="quote-item">
-                                <span class="quote-text">
-                                    “{{ $settings->app_name }} Construction has delivered exceptional service on our
-                                    project from start to finish.
-                                    Their ability to handle complex tasks and deliver within budget has been remarkable.
-                                    We’ve been extremely pleased with their communication, as well as their commitment to
-                                    quality work. We highly recommend them for any construction-related needs.”
-                                </span>
-
-                                <div class="quote-item-footer">
-                                    <div class="quote-item-info">
-                                        <h3 class="quote-author">Mr. Vikram Soni (Managing Director)</h3>
-                                        <span class="quote-subtext">M/S Techbuild Solutions</span>
-                                    </div>
-                                </div>
-                            </div><!-- Quote item end -->
-                        </div>
-
-                    </div>
-                </div><!-- Col end -->
-            </div>
-        </div>
-    </section> --}}
-
     <section class="content testimonial-area-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="column-title text-center color-white">CLIENT FEEDBACK</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="column-title text-center color-white">CLIENT FEEDBACK</h3>
 
-                    <div id="testimonial-slide" class="testimonial-slide">
-
-                        <div class="item">
-                            <div class="quote-item">
-                                <span class="quote-text">
-                                    “We are highly satisfied with the quality of work delivered by M/S
-                                    {{ $settings->app_name }} Construction.
-                                    Their team demonstrated excellent professionalism throughout the execution of our
-                                    projects, from the design phase to completion. The steel structure of the bridge and the
-                                    construction of our bungalow were completed on time and exceeded our expectations in
-                                    terms of craftsmanship and attention to detail. We highly recommend their services for
-                                    future projects.”
-                                </span>
-
-                                <div class="quote-item-footer">
-                                    <div class="quote-item-info">
-                                        <h3 class="quote-author">Dr.Deepak Gupta</h3>
-                                        {{-- <span class="quote-subtext">M/S. Apex Engineering</span> --}}
-                                    </div>
+                <div class="testimonial-slide owl-carousel">
+                    <div class="item" data-dot="1">
+                        <div class="quote-item">
+                            <span class="quote-text">
+                                “We are highly satisfied with the quality of work delivered by M/S MyCompany Construction.
+                                Their team demonstrated excellent professionalism throughout the execution of our
+                                projects, from the design phase to completion. The steel structure of the bridge and the
+                                construction of our bungalow were completed on time and exceeded our expectations in
+                                terms of craftsmanship and attention to detail. We highly recommend their services for
+                                future projects.”
+                            </span>
+                            <div class="quote-item-footer">
+                                <div class="quote-item-info">
+                                    <h3 class="quote-author">Dr. Deepak Gupta</h3>
                                 </div>
-                            </div><!-- Quote item end -->
+                            </div>
                         </div>
-
-                        <div class="item">
-                            <div class="quote-item">
-                                <span class="quote-text">
-                                    “We had the pleasure of working with M/S {{ $settings->app_name }} Construction on
-                                    several key projects. The
-                                    professionalism, attention to detail, and consistent project delivery were impressive.
-                                    They ensured that each project was executed in compliance with safety regulations,
-                                    quality standards, and timelines. We look forward to collaborating with them on future
-                                    developments.”
-                                </span>
-
-                                <div class="quote-item-footer">
-                                    <div class="quote-item-info">
-                                        <h3 class="quote-author">Mohit Tiwari</h3>
-                                        {{-- <span class="quote-subtext">M/S BuildTech Ltd.</span> --}}
-                                    </div>
-                                </div>
-                            </div><!-- Quote item end -->
-                        </div>
-
-                        <div class="item">
-                            <div class="quote-item">
-                                <span class="quote-text">
-                                    “{{ $settings->app_name }} Construction has delivered exceptional service on our
-                                    project from start to finish.
-                                    Their ability to handle complex tasks and deliver within budget has been remarkable.
-                                    We’ve been extremely pleased with their communication, as well as their commitment to
-                                    quality work. We highly recommend them for any construction-related needs.”
-                                </span>
-
-                                <div class="quote-item-footer">
-                                    <div class="quote-item-info">
-                                        <h3 class="quote-author">Ankit Singh</h3>
-                                        {{-- <span class="quote-subtext">M/S Greenfield Construction</span> --}}
-                                    </div>
-                                </div>
-                            </div><!-- Quote item end -->
-                        </div>
-
                     </div>
-                </div><!-- Col end -->
+
+                    <div class="item" data-dot="2">
+                        <div class="quote-item">
+                            <span class="quote-text">
+                                “We had the pleasure of working with M/S MyCompany Construction on several key projects.
+                                The professionalism, attention to detail, and consistent project delivery were impressive.
+                                They ensured that each project was executed in compliance with safety regulations,
+                                quality standards, and timelines. We look forward to collaborating with them on future
+                                developments.”
+                            </span>
+                            <div class="quote-item-footer">
+                                <div class="quote-item-info">
+                                    <h3 class="quote-author">Mohit Tiwari</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" data-dot="3">
+                        <div class="quote-item">
+                            <span class="quote-text">
+                                “MyCompany Construction has delivered exceptional service on our project from start to finish.
+                                Their ability to handle complex tasks and deliver within budget has been remarkable.
+                                We’ve been extremely pleased with their communication, as well as their commitment to
+                                quality work. We highly recommend them for any construction-related needs.”
+                            </span>
+                            <div class="quote-item-footer">
+                                <div class="quote-item-info">
+                                    <h3 class="quote-author">Ankit Singh</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- .testimonial-slide -->
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
     @if (count($galleries) > 0)
@@ -550,33 +395,6 @@
                 <div class="row">
                     <div class="col-12">
                         <!-- project filter end -->
-                        {{-- <div class="row shuffle-wrapper">
-                            <div class="col-1 shuffle-sizer"></div>
-
-                            @foreach ($galleries as $gallery)
-                                <div class="col-lg-4 col-sm-6 shuffle-item"
-                                    data-groups="[&quot;government&quot;,&quot;healthcare&quot;]">
-                                    <div class="project-img-container">
-                                        <a class="gallery-popup" href="{{ public_asset($gallery->image) }}"
-                                            aria-label="project-img">
-                                            <img class="img-fluid" src="{{ public_asset($gallery->image) }}"
-                                                alt="project-img">
-
-                                        </a>
-                                        <div class="project-item-info">
-                                            <div class="project-item-info-content">
-                                                <h3 class="project-item-title">
-                                                    <a class="gallery-popup" href="{{ public_asset($gallery->image) }}"
-                                                        aria-label="project-img">{{ $gallery->title }}</a>
-                                                </h3>
-                                                <!-- <p class="project-cat">Commercial, Interiors</p> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-
-                        </div><!-- shuffle end --> --}}
                         <div class="row shuffle-wrapper shuffle"
                             style="position: relative; overflow: hidden; height: 273.6px; transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1);">
                             <div class="col-1 shuffle-sizer"></div>
@@ -690,3 +508,23 @@
     </section>
     <!--/ subscribe end -->
 @endsection
+
+@push('scripts')
+{{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.testimonial-slide').owlCarousel({
+            items: 1,
+            loop: true,
+            nav: false,
+            dots: true,
+            dotsData: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            smartSpeed: 600
+        });
+    });
+</script>
+@endpush

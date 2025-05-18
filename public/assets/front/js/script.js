@@ -194,16 +194,16 @@ jQuery(function ($) {
 
 
 		// testimonial carousel
-		function testimonialCarousel() {
-			$('.testimonial-slide').slick({
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				dots: true,
-				speed: 600,
-				arrows: false
-			});
-		}
-		testimonialCarousel();
+		// function testimonialCarousel() {
+		// 	$('.testimonial-slide').slick({
+		// 		slidesToShow: 1,
+		// 		slidesToScroll: 1,
+		// 		dots: true,
+		// 		speed: 600,
+		// 		arrows: false
+		// 	});
+		// }
+		// testimonialCarousel();
 
 
 		// team carousel
@@ -269,12 +269,12 @@ $(document).ready(function(){
 		  openEffect: "none",
 		  closeEffect: "none"
 	  });
-	  
+
 	  $(".zoom").hover(function(){
-		  
+
 		  $(this).addClass('transition');
 	  }, function(){
-		  
+
 		  $(this).removeClass('transition');
 	  });
   });

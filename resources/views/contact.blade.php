@@ -13,13 +13,13 @@
         .banner-image {
             padding: 0;
             height: 50vh;
-            background: url(https://sraconstruction.in/images/image.png);
+            background: url({{ public_asset('assets/front/images/contact.png') }});
             background-repeat: no-repeat;
             background-size: cover;
             margin-top: 4%;
         }
     </style>
-    <div id="banner-area" class="banner-area" style="background-image:url(images/design.png);background-color:#3f1d71 ;">
+    <div id="banner-area" class="banner-area" style="background-image:url({{ public_asset('images/contact2.jpg') }});background-color:#3f1d71 ;">
         <div class="banner-text">
             <div class="container">
                 <div class="row">
