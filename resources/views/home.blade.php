@@ -1,11 +1,12 @@
 @extends('layouts.app')
 @section('title', 'Home Page')
 @section('content')
-{{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/> --}}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/> --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
-<style>
+    <style>
         .subscribe {
             background: url(https://sraconstruction.in/images/connectbg.png);
             background-size: cover;
@@ -57,7 +58,8 @@
             background-size: cover;
             margin-top: 2%;
         }
-         .testimonial-area-bg {
+
+        .testimonial-area-bg {
             padding: 60px 0;
         }
 
@@ -313,67 +315,61 @@
     </section><!-- Main container end -->
 
     <section class="content testimonial-area-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 class="column-title text-center color-white">CLIENT FEEDBACK</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="column-title text-center color-white">CLIENT FEEDBACK</h3>
 
-                <div class="testimonial-slide owl-carousel">
-                    <div class="item" data-dot="1">
-                        <div class="quote-item">
-                            <span class="quote-text">
-                                “We are highly satisfied with the quality of work delivered by M/S MyCompany Construction.
-                                Their team demonstrated excellent professionalism throughout the execution of our
-                                projects, from the design phase to completion. The steel structure of the bridge and the
-                                construction of our bungalow were completed on time and exceeded our expectations in
-                                terms of craftsmanship and attention to detail. We highly recommend their services for
-                                future projects.”
-                            </span>
-                            <div class="quote-item-footer">
-                                <div class="quote-item-info">
-                                    <h3 class="quote-author">Dr. Deepak Gupta</h3>
+                    <div class="testimonial-slide owl-carousel">
+                        <div class="item" data-dot="1">
+                            <div class="quote-item">
+                                <span class="quote-text">
+                                    “Mivan construction ensures high-quality, smooth finishes with fast, durable, and
+                                    accurate structures. Minimal joints reduce leakage risks. However, skilled labor and
+                                    precise execution are essential for optimal results.”
+                                </span>
+                                <div class="quote-item-footer">
+                                    <div class="quote-item-info">
+                                        <h3 class="quote-author">Dr. Deepak Gupta</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="item" data-dot="2">
-                        <div class="quote-item">
-                            <span class="quote-text">
-                                “We had the pleasure of working with M/S MyCompany Construction on several key projects.
-                                The professionalism, attention to detail, and consistent project delivery were impressive.
-                                They ensured that each project was executed in compliance with safety regulations,
-                                quality standards, and timelines. We look forward to collaborating with them on future
-                                developments.”
-                            </span>
-                            <div class="quote-item-footer">
-                                <div class="quote-item-info">
-                                    <h3 class="quote-author">Mohit Tiwari</h3>
+                        <div class="item" data-dot="2">
+                            <div class="quote-item">
+                                <span class="quote-text">
+                                    “Mivan technology offers a 5-star construction process with exceptional speed, accuracy,
+                                    and finish. It ensures durable, monolithic structures with minimal plastering, making it
+                                    ideal for large-scale, high-quality housing projects.”
+                                </span>
+                                <div class="quote-item-footer">
+                                    <div class="quote-item-info">
+                                        <h3 class="quote-author">Mohit Tiwari</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="item" data-dot="3">
-                        <div class="quote-item">
-                            <span class="quote-text">
-                                “MyCompany Construction has delivered exceptional service on our project from start to finish.
-                                Their ability to handle complex tasks and deliver within budget has been remarkable.
-                                We’ve been extremely pleased with their communication, as well as their commitment to
-                                quality work. We highly recommend them for any construction-related needs.”
-                            </span>
-                            <div class="quote-item-footer">
-                                <div class="quote-item-info">
-                                    <h3 class="quote-author">Ankit Singh</h3>
+                        <div class="item" data-dot="3">
+                            <div class="quote-item">
+                                <span class="quote-text">
+                                    “Mivan construction staff are skilled in rapid formwork technology, ensuring high
+                                    precision, speed, and quality. Their efficiency, teamwork, and technical expertise
+                                    significantly enhance project timelines and structural consistency.”
+                                </span>
+                                <div class="quote-item-footer">
+                                    <div class="quote-item-info">
+                                        <h3 class="quote-author">Ankit Singh</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div> <!-- .testimonial-slide -->
+                    </div> <!-- .testimonial-slide -->
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     @if (count($galleries) > 0)
@@ -510,21 +506,21 @@
 @endsection
 
 @push('scripts')
-{{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    {{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> --}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.testimonial-slide').owlCarousel({
-            items: 1,
-            loop: true,
-            nav: false,
-            dots: true,
-            dotsData: true,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            smartSpeed: 600
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.testimonial-slide').owlCarousel({
+                items: 1,
+                loop: true,
+                nav: false,
+                dots: true,
+                dotsData: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                smartSpeed: 600
+            });
         });
-    });
-</script>
+    </script>
 @endpush
