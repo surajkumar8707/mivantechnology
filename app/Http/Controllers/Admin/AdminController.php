@@ -3,12 +3,14 @@
 namespace App\Http\Controllers\Admin;
 
 use App\DataTables\ContactsDataTable;
+use App\DataTables\GalleryDataTable;
 use App\Models\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use App\Models\Booking;
 use App\Models\Contact;
+use App\Models\Gallery;
 use App\Models\Setting;
 use App\Models\SocialMediaLink;
 use Illuminate\Support\Facades\Hash;
@@ -202,4 +204,91 @@ class AdminController extends Controller
     }
 
     public function aboutPage() {}
+    public function galleryPage(GalleryDataTable $dataTable)
+    {
+        try {
+            return $dataTable->render('admin.gallery.index');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', $e->getMessage());
+        }
+    }
+
+    public function changeStatus(Request $request)
+    {
+        $status = $request->status;
+        $id = $request->id;
+
+        $gallery = Gallery::find($id);
+        if ($gallery) {
+            $gallery->update([
+                'status' => $status,
+            ]);
+            return returnWebJsonResponse('Status changed successfully', 'success', $gallery);
+        } else {
+            return returnWebJsonResponse('Carousel not found');
+        }
+    }
+
+    public function galleryCreate()
+    {
+        return view('admin.gallery.create');
+    }
+
+    public function store(Request $request)
+    {
+        $data = $request->validate([
+            'title'  => 'nullable|string|max:255',
+            'image'  => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'type'   => 'required|in:mivan,post_tensioning',
+            'status' => 'required|boolean',
+        ]);
+
+        if ($request->hasFile('image')) {
+            $file      = $request->file('image');
+            $filename  = time() . '_' . $file->getClientOriginalName();
+            $file->move(public_path('uploads/gallery'), $filename);
+            $data['image'] = 'uploads/gallery/' . $filename;
+        }
+
+        Gallery::create($data);
+        return redirect()->route('admin.gallery.index')->with('success', 'Gallery created successfully.');
+    }
+
+    public function edit(Gallery $gallery)
+    {
+        return view('admin.gallery.edit', compact('gallery'));
+    }
+
+    public function update(Request $request, Gallery $gallery)
+    {
+        $data = $request->validate([
+            'title'  => 'nullable|string|max:255',
+            'image'  => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'type'   => 'required|in:mivan,post_tensioning',
+            'status' => 'required|boolean',
+        ]);
+
+        if ($request->hasFile('image')) {
+            // Optionally delete old image
+            if (file_exists(public_path($gallery->image))) {
+                unlink(public_path($gallery->image));
+            }
+            $file      = $request->file('image');
+            $filename  = time() . '_' . $file->getClientOriginalName();
+            $file->move(public_path('uploads/gallery'), $filename);
+            $data['image'] = 'uploads/gallery/' . $filename;
+        }
+
+        $gallery->update($data);
+        return redirect()->route('admin.gallery.index')->with('success', 'Gallery updated successfully.');
+    }
+
+    public function destroy(Gallery $gallery)
+    {
+        if (file_exists(public_path($gallery->image))) {
+            unlink(public_path($gallery->image));
+        }
+        $gallery->delete();
+        return redirect()->route('admin.gallery.index')->with('success', 'Gallery deleted.');
+    }
 }

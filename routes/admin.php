@@ -44,6 +44,14 @@ Route::middleware('role:admin')->group(function () {
         Route::get('/about', [AdminController::class, 'aboutPage'])->name('about');
         Route::get('/our-room', [AdminController::class, 'ourRoomPage'])->name('our.room');
         Route::get('/gallery', [AdminController::class, 'galleryPage'])->name('gallery');
+        Route::get('/gallery/create', [AdminController::class, 'galleryCreate'])->name('gallery.create');
+        Route::post('gallery', [AdminController::class, 'store'])->name('gallery.store');
+        Route::get('gallery/{gallery}', [AdminController::class, 'show'])->name('gallery.show');
+        Route::get('gallery/{gallery}/edit', [AdminController::class, 'edit'])->name('gallery.edit');
+        Route::put('gallery/{gallery}', [AdminController::class, 'update'])->name('gallery.update');
+        Route::patch('gallery/{gallery}', [AdminController::class, 'update']); // Optional — for PATCH method
+        Route::delete('gallery/{gallery}', [AdminController::class, 'destroy'])->name('gallery.destroy');
+        Route::post('/gallery/change-status', [AdminController::class, 'changeStatus'])->name('gallery.change.status');
     });
 
     Route::resource('home-page-carousel', HomePageCarouselController::class);

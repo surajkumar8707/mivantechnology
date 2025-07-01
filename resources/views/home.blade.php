@@ -296,11 +296,11 @@
                         REPUTATION TO GET <br>
                         THE JOB DONE RIGHT<br></h3>
 
-                    <p>Construction Mivan Technology LLP is a leading construction company based in Sivan Bihar, delivering
+                    <p>{{ $settings->app_name }} is a leading construction company based in Sivan Bihar, delivering
                         high-quality construction solutions since 2025. With a strong foundation in innovation and
                         reliability, we specialize in building structures that reflect excellence, efficiency, and long-term
                         durability.</p>
-                    <p>At Construction Mivan Technology LLP, we take pride in crafting buildings with exceptional attention
+                    <p>At {{ $settings->app_name }}, we take pride in crafting buildings with exceptional attention
                         to detail and superior craftsmanship. Our team consists of over 100 qualified and experienced
                         professionals, many of whom have worked together for more than twenty-five years, bringing unmatched
                         synergy, skill, and dedication to every project we undertake.</p>
@@ -324,7 +324,7 @@
                         <div class="item" data-dot="1">
                             <div class="quote-item">
                                 <span class="quote-text">
-                                    “Mivan construction ensures high-quality, smooth finishes with fast, durable, and
+                                    “{{ $settings->app_name }} ensures high-quality, smooth finishes with fast, durable, and
                                     accurate structures. Minimal joints reduce leakage risks. However, skilled labor and
                                     precise execution are essential for optimal results.”
                                 </span>
@@ -339,7 +339,7 @@
                         <div class="item" data-dot="2">
                             <div class="quote-item">
                                 <span class="quote-text">
-                                    “Mivan technology offers a 5-star construction process with exceptional speed, accuracy,
+                                    “{{ $settings->app_name }} offers a 5-star construction process with exceptional speed, accuracy,
                                     and finish. It ensures durable, monolithic structures with minimal plastering, making it
                                     ideal for large-scale, high-quality housing projects.”
                                 </span>
@@ -354,7 +354,7 @@
                         <div class="item" data-dot="3">
                             <div class="quote-item">
                                 <span class="quote-text">
-                                    “Mivan construction staff are skilled in rapid formwork technology, ensuring high
+                                    “{{ $settings->app_name }} staff are skilled in rapid formwork technology, ensuring high
                                     precision, speed, and quality. Their efficiency, teamwork, and technical expertise
                                     significantly enhance project timelines and structural consistency.”
                                 </span>

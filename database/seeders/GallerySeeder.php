@@ -93,6 +93,18 @@ class GallerySeeder extends Seeder
                 'status' => true,
                 'type' => 'post_tensioning',
             ],
+            [
+                'title' => 'Project Building',
+                'image' => "assets/front/images/gallery/gallery_14.jpg",
+                'status' => true,
+                'type' => 'post_tensioning',
+            ],
+            [
+                'title' => 'Project Building',
+                'image' => "assets/front/images/gallery/gallery_15.jpg",
+                'status' => true,
+                'type' => 'post_tensioning',
+            ],
         );
 
         if (count($default_galleries) > 0) {
