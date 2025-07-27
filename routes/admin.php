@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CustomerController;
 use App\Http\Controllers\Admin\HomePageCarouselController;
+use App\Http\Controllers\Admin\BlogCarouselController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,5 +56,8 @@ Route::middleware('role:admin')->group(function () {
     });
 
     Route::resource('home-page-carousel', HomePageCarouselController::class);
+    Route::resource('blog', BlogCarouselController::class);
+    Route::get('blog/{blog}/delete', [BlogCarouselController::class, 'destroy'])->name('blog.delete');
     Route::post('/change-status', [HomePageCarouselController::class, 'changeStatus'])->name('change.status');
+    Route::post('/blog/change-status', [BlogCarouselController::class, 'changeStatus'])->name('blog.change.status');
 });

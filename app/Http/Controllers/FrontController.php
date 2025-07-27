@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use App\Models\Booking;
 use App\Models\Contact;
 use App\Models\Gallery;
@@ -80,9 +81,26 @@ class FrontController extends Controller
     {
         return view('rent_property');
     }
-    public function blog()
+    public function blogs($id = null)
     {
-        return view('blog');
+        if ($id) {
+            $blog = Blog::findOrFail($id);
+        } else {
+            $blog = Blog::where('status', 1)->orderBy('id', 'DESC')->first();
+        }
+        // $blog = Blog::where('status', 1)->orderBy('id', 'DESC')->first();
+        $blogs = Blog::where('status', 1)->orderBy('id', 'DESC')->take(5)->get();
+        return view('blog', compact('blog', 'blogs'));
+    }
+
+    public function specificBlog($id)
+    {
+        try {
+            $blog = Blog::findOrFail($id);
+            dd($blog);
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', 'Blog not found');
+        }
     }
 
     public function privacyPolicy()
@@ -120,12 +138,12 @@ class FrontController extends Controller
         ]);
 
         $create = [
-            'name'=> $request->fname." ".$request->lname,
-            'email'=> $request->email,
-            'phone'=> $request->phone,
-            'city'=> $request->city,
-            'service'=> $request->service,
-            'message'=> $request->message,
+            'name' => $request->fname . " " . $request->lname,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'city' => $request->city,
+            'service' => $request->service,
+            'message' => $request->message,
         ];
         $contact = Contact::create($create);
         // dd($contact);

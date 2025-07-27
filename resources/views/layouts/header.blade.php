@@ -1,6 +1,6 @@
 <header id="header" class="header-two">
     <div class="site-navigation">
-        <div class="container">
+        <div class="container-fluid pl-md-5 ml-md-5">
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light p-0">
@@ -43,6 +43,10 @@
 
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('front.gallery') }}">Gallery</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('front.blogs') }}">Blog</a>
                                 </li>
 
                                 <li class="nav-item">

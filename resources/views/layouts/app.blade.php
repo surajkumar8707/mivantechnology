@@ -43,6 +43,8 @@
 
     <link rel="stylesheet" href="{{ public_asset('assets/front/css/style.css') }}">
 
+    @stack('styles')
+
 </head>
 
 <body>
