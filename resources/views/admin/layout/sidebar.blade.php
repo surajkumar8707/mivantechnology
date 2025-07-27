@@ -71,6 +71,14 @@
         </li> --}}
 
         <li
+            class="menu-item {{ isActiveRoute(['admin.blog.index', 'admin.blog.create', 'admin.blog.edit']) }}">
+            <a href="{{ route('admin.blog.index') }}" class="menu-link">
+                <i class='menu-icon tf-icons bx bxs-carousel'></i>
+                <div data-i18n="Analytics">Blog</div>
+            </a>
+        </li>
+
+        <li
             class="menu-item {{ isActiveRoute(['admin.home-page-carousel.index', 'admin.home-page-carousel.create', 'admin.home-page-carousel.edit']) }}">
             <a href="{{ route('admin.home-page-carousel.index') }}" class="menu-link">
                 <i class='menu-icon tf-icons bx bxs-carousel'></i>
